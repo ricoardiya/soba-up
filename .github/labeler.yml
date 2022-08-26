@@ -1,0 +1,11 @@
+web:
+  - packages/web/*
+
+mobile:
+  - packages/mobile/*
+
+docs:
+  - "*.md"
+
+ci:
+  - .github/
