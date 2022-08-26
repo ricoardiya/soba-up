@@ -1,14 +1,10 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import { View } from 'react-native-animatable';
 
-import styles from './index.style'
 import Circle from "../../../components/Circle";
-import colorUtils from "../utils/colorsUtils";
+import styles from "./index.style";
 
-export default function TilesCarousel () {
-    const numberOfCircles: number = 15
-
-    const colors: Array<string> = colorUtils.generateColors(numberOfCircles)
+export default function Grid ({colors}: {colors: Array<string>}) {
 
     return (
         <View style={{flex: 1, justifyContent: "center", alignSelf:"center"}}>

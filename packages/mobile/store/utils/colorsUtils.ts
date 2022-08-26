@@ -1,3 +1,4 @@
+const NUMBER_OF_COLORS = 15
 const NUMBER_OF_RED = 1
 const NUMBER_OF_BLUE = 3
 const RED = 'red'
@@ -44,6 +45,7 @@ const generateColors = (numberOfColors: number): Array<string> => {
 
 export default {
     generateColors,
+    NUMBER_OF_COLORS,
     RED,
     BLUE,
     WHITE
