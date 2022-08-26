@@ -1,5 +1,8 @@
 const NUMBER_OF_RED = 1
 const NUMBER_OF_BLUE = 3
+const RED = 'red'
+const WHITE = 'white'
+const BLUE = 'blue'
 
 
 const getRandomInt = (max: number) => {
@@ -39,4 +42,9 @@ const generateColors = (numberOfColors: number): Array<string> => {
     return colors
 }
 
-export default {generateColors}
+export default {
+    generateColors,
+    RED,
+    BLUE,
+    WHITE
+}
