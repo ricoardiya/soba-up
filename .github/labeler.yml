@@ -8,4 +8,4 @@ docs:
   - "*.md"
 
 ci:
-  - .github/
+  - .github/*
