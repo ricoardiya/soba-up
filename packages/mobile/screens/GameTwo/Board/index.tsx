@@ -3,12 +3,12 @@ import { View } from 'react-native-animatable';
 
 import styles from './index.style'
 import Circle from "../../../components/Circle";
-import generateColors from "../utils/generateColors";
+import colorUtils from "../utils/colorsUtils";
 
 export default function TilesCarousel () {
     const numberOfCircles: number = 15
 
-    const colors: Array<string> = generateColors.generateColors(numberOfCircles)
+    const colors: Array<string> = colorUtils.generateColors(numberOfCircles)
 
     return (
         <View style={{flex: 1, justifyContent: "center", alignSelf:"center"}}>

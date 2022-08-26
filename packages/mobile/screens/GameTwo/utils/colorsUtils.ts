@@ -17,7 +17,7 @@ const generateColors = (numberOfColors: number): Array<string> => {
         // Make sure red is always in the grid
         if (i == numberOfColors - 1) {
             if (red > 0) {
-                colors = [...colors, 'red']
+                colors = [...colors, RED]
                 red = red - 1
                 continue
             }
@@ -25,19 +25,19 @@ const generateColors = (numberOfColors: number): Array<string> => {
         const color = getRandomInt(10)
         if (color === 0) {
             if (red > 0) {
-                colors = [...colors, 'red']
+                colors = [...colors, RED]
                 red = red - 1
                 continue
             }
         }
         if (color === 1) {
             if (blue > 0) {
-                colors = [...colors, 'blue']
+                colors = [...colors, BLUE]
                 blue = blue - 1
                 continue
             }
         }
-        colors = [...colors, 'white']
+        colors = [...colors, WHITE]
     }
     return colors
 }
