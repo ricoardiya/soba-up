@@ -30,4 +30,6 @@ yarn start
 
 ### Contributors
 
-
+[@ricoardiya](https://github.com/ricoardiya)
+[@elsatmr](https://github.com/elsatmr)
+[@kelvinc123](https://github.com/kelvinc123)
