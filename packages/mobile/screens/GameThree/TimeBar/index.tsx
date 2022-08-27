@@ -17,20 +17,20 @@ export default function TimeBar() {
     }).start()
   }, [])
 
-    // Animate the TimeBar color from grey to red, starting when there are left only 12 seconds
-    // const backgroundColor = animateValue.interpolate({
-    //     inputRange: [0, timings.TIME_LIMIT_MS * 0.4, timings.TIME_LIMIT_MS],
-    //     outputRange: ['rgba(255,0,0, 1)', 'rgba(100,0,100, 1)', 'rgba(0,0,255, 1)'],
-    // });
-    // Animate the TimeBar width from DEVICE_WIDTH to 0 in TIME_LIMIT_MS (which currently is 30 seconds)
-    const width = animateValue.interpolate({
-        inputRange: [0, timings.TIME_LIMIT_MS],
-        outputRange: [0, metrics.DEVICE_WIDTH],
-    });
+  // Animate the TimeBar color from grey to red, starting when there are left only 12 seconds
+  // const backgroundColor = animateValue.interpolate({
+  //     inputRange: [0, timings.TIME_LIMIT_MS * 0.4, timings.TIME_LIMIT_MS],
+  //     outputRange: ['rgba(255,0,0, 1)', 'rgba(100,0,100, 1)', 'rgba(0,0,255, 1)'],
+  // });
+  // Animate the TimeBar width from DEVICE_WIDTH to 0 in TIME_LIMIT_MS (which currently is 30 seconds)
+  const width = animateValue.interpolate({
+    inputRange: [0, timings.TIME_LIMIT_MS],
+    outputRange: [0, metrics.DEVICE_WIDTH]
+  })
 
-    return (
-        <View style={styles.container}>
-            <Animated.View style={[styles.content, {width}]} />
-        </View>
-    );
+  return (
+    <View style={styles.container}>
+      <Animated.View style={[styles.content, { width }]} />
+    </View>
+  )
 }

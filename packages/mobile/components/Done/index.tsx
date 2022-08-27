@@ -13,10 +13,14 @@ export default function Done() {
   }
 
   return (
-    <TouchableWithoutFeedback onPress={onPress}>
-      <View style={[styles.box]}>
-        <Text style={[styles.text]}>Done</Text>
-      </View>
-    </TouchableWithoutFeedback>
+    <View style={styles.tapBorder}>
+      <TouchableWithoutFeedback onPress={onPress}>
+        <View style={styles.tapButton}>
+          <Text style={{ color: 'white', alignSelf: 'center', fontSize: 20 }}>
+            Done
+          </Text>
+        </View>
+      </TouchableWithoutFeedback>
+    </View>
   )
 }
