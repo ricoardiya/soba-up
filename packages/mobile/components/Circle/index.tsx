@@ -13,7 +13,7 @@ export default function Circle({ color }: { color: string }) {
   const dispatch = useAppDispatch()
 
   const onPress = () => {
-    if (color == colorUtils.RED) {
+    if (color == colorUtils.TARGET) {
       dispatch(increaseScoreGameTwoAction())
       dispatch(nextLevelGameTwoAction())
     } else {
