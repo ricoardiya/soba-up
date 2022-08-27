@@ -26,7 +26,7 @@ yarn install
 npx lerna bootstrap
 ```
 
-#### Run web :computer:
+#### :computer: Run web
 
 Environment variables
 
@@ -44,7 +44,7 @@ yarn install
 yarn dev
 ```
 
-#### Run mobile :iphone:
+#### :iphone: Run mobile
 
 ```shell
 cd packages/mobile
