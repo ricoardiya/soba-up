@@ -11,15 +11,17 @@ export default StyleSheet.create({
     width: 250,
     height: 250,
     borderRadius: 200,
-    borderWidth: 1,
-    borderStyle: "dashed"
+    borderWidth: 2,
+    borderStyle: "dashed",
+    borderColor: colors.DEFAULT_BLACK
   },
   smallCircle: {
     position: "absolute",
     width: 50,
     height: 50,
-    borderWidth: 1,
+    borderWidth: 2,
     borderRadius: 50,
+    borderColor: colors.DEFAULT_BLACK,
     backgroundColor: "white",
   },
   topCircle: {
@@ -39,7 +41,6 @@ export default StyleSheet.create({
     right: -25
   },
   redBorder: {
-    borderWidth: 2,
     borderColor: colors.RED_CIRCLE,
   },
   blackBorder: {
@@ -62,7 +63,7 @@ export default StyleSheet.create({
     width: 120,
     height: 120,
     borderColor: colors.DEFAULT_BLACK,
-    borderWidth: 1,
+    borderWidth: 2,
     borderRadius: 120
   },
   tapButton: {
