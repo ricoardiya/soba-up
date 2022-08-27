@@ -10,36 +10,71 @@ import blurryUtils from "../utils/blurryUtils";
 interface GameThreeState {
     isGameRunning: boolean
     isEndGame: boolean,
-    score: number,
-    circleProps: Array<string>
+    circleProps: Array<string>,
+    circleClicked: Array<number>,
+    numMissing: number,
+    numCorrect: number,
+    numBlur: number,
+    numWrong: number
 }
 
 export const initialGameThreeState: GameThreeState = {
     isGameRunning: false,
     isEndGame: false,
-    score: 0,
-    circleProps: []
+    circleProps: [],
+    circleClicked: [],
+    numMissing: 0,
+    numCorrect: 0,
+    numBlur: 0,
+    numWrong: 0
 }
 
 export const gameThreeReducer = createReducer(initialGameThreeState, (builder) => {
     builder
         .addCase(startGameThreeAction, (state, action) => {
-            state.score = 0
             state.isGameRunning = true
             state.circleProps = blurryUtils.generateBlurCircles(blurryUtils.NUMBER_OF_CIRCLES)
+            state.circleClicked = Array(blurryUtils.NUMBER_OF_CIRCLES).fill(0)
         })
         .addCase(toogleCircle, (state, action) => {
-            if (state.circleProps[parseInt(action.payload.idx)] === blurryUtils.BLUR) {
-                state.circleProps[parseInt(action.payload.idx)] = blurryUtils.NON_BLUR
+            if (state.circleClicked[parseInt(action.payload.idx)] === 1) {
+                state.circleClicked[parseInt(action.payload.idx)] = 0
             } else {
-                state.circleProps[parseInt(action.payload.idx)] = blurryUtils.BLUR
+                state.circleClicked[parseInt(action.payload.idx)] = 1
             }
         })
         .addCase(startTimerAction.fulfilled, (state, action) => {
+            for (let i = 0; i < blurryUtils.NUMBER_OF_CIRCLES; i++) {
+                if (state.circleProps[i] === blurryUtils.BLUR) {
+                    state.numBlur += 1;
+                    if (state.circleClicked[i] === 0) {
+                        state.numMissing += 1;
+                    } else {
+                        state.numCorrect += 1;
+                    }
+                } else {
+                    if (state.circleClicked[i] === 1) {
+                        state.numWrong += 1;
+                    }
+                }
+            }
             state.isGameRunning = false
         })
         .addCase(finishGame, (state, action) => {
-            state.score = blurryUtils.NUMBER_OF_CIRCLES - state.circleProps.filter( el => el === blurryUtils.BLUR).length
+            for (let i = 0; i < blurryUtils.NUMBER_OF_CIRCLES; i++) {
+                if (state.circleProps[i] === blurryUtils.BLUR) {
+                    state.numBlur += 1;
+                    if (state.circleClicked[i] === 0) {
+                        state.numMissing += 1;
+                    } else {
+                        state.numCorrect += 1;
+                    }
+                } else {
+                    if (state.circleClicked[i] === 1) {
+                        state.numWrong += 1;
+                    }
+                }
+            }
             state.isGameRunning = false
         })
 })

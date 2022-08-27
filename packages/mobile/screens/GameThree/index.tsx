@@ -32,7 +32,8 @@ export default function GameThree() {
             {!gameThreeState.isGameRunning &&
                 (
                     <>
-                        <Text>your score is {gameThreeState.score}</Text>
+                        <Text>You got {gameThreeState.numCorrect} out of {gameThreeState.numBlur} circles!</Text>
+                        <Text>You clicked on {gameThreeState.numWrong} wrong circles!</Text>
                     </>
                 )
             }
