@@ -4,6 +4,7 @@ import HeaderBar from '../components/HeaderBar/HeaderBar';
 import { ThemeProvider } from '@emotion/react';
 import FirstPartScreen from '../components/FirstPartScreen/FirstPartScreen';
 import SecondPartScreen from '../components/SecondPartScreen/SecondPartScreen';
+import ThirdPartScreen from '../components/ThirdPartScreen/ThirdPartScreen';
 
 const theme = createTheme({
   palette: {
@@ -23,6 +24,7 @@ export default function Home() {
         <HeaderBar />
         <FirstPartScreen />
         <SecondPartScreen />
+        <ThirdPartScreen />
       </div>
     </ThemeProvider>
   );

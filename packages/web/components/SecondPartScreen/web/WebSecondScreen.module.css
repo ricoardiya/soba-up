@@ -30,7 +30,7 @@
 .secondTextHeader h1 {
   position: absolute;
   width: 75%;
-  top: 15%;
+  top: 10%;
   right: 47%;
   color: #de6fa1;
   -webkit-text-stroke: 0;
@@ -40,6 +40,6 @@
   margin-bottom: 3rem;
 }
 
-.textContainer {
-  z-index: 1;
+.pattern {
+  width: 10rem;
 }

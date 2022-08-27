@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 5rem;
+  margin: 3rem;
+  margin-right: 10rem;
+  margin-left: 10rem;
+  margin-top: 0rem;
+}
+
+.imageText h2 {
+  font-size: 34px;
+  text-align: center;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.imageText h3 {
+  text-align: center;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.imageTextContainer {
+  display: inline;
+}

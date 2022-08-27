@@ -15,11 +15,6 @@
   justify-content: center;
 }
 
-.textContainer {
-  width: 75%;
-  height: 75%;
-}
-
 .headerContainer {
   display: inline-flex;
   padding-bottom: 0;
@@ -29,30 +24,6 @@
   float: inline-start;
 }
 
-.hr {
-  position: relative;
-  width: 200px;
-  border: 2px solid #de6fa1;
-  border-radius: 2px;
-  background-color: #de6fa1;
-  margin-bottom: 4rem;
-}
-
-.hr2 {
-  position: relative;
-  width: 70px;
-  border: 2px solid black;
-  border-radius: 2px;
-  background-color: black;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.zzImage {
-  float: inline-end;
-  margin-left: 1rem;
-}
-
 .pattern {
   width: 10rem;
 }
@@ -60,4 +31,25 @@
 .visitAppContainer {
   display: inline-flex;
   position: relative;
+}
+
+.sobaUpBg h1 {
+  color: white;
+  -webkit-text-stroke: 0.1px #de6fa1;
+  padding-left: 3rem;
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+
+.secondTextHeader h1 {
+  position: absolute;
+  width: 75%;
+  right: 27%;
+  color: #de6fa1;
+  -webkit-text-stroke: 0;
+}
+
+.textHeader {
+  margin-bottom: 3rem;
 }

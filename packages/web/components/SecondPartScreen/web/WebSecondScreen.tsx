@@ -27,6 +27,9 @@ const WebSecondScreen = () => {
             <h3>a series of games designed to test cognitive</h3>
             <h3>abilities to determine an individual's level of</h3>
             <h3>awareness.</h3>
+            <div className={styles.pattern}>
+              <Image src={Pattern} />
+            </div>
           </div>
         </div>
       </div>
