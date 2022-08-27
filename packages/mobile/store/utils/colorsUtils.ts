@@ -1,3 +1,5 @@
+import randomUtils from "./randomUtils";
+
 const NUMBER_OF_COLORS = 15
 const NUMBER_OF_RED = 1
 const NUMBER_OF_BLUE = 3
@@ -6,15 +8,11 @@ const WHITE = 'white'
 const BLUE = 'blue'
 
 
-const getRandomInt = (max: number) => {
-    return Math.floor(Math.random() * max)
-}
-
 const generateColors = (numberOfColors: number): Array<string> => {
-    let colors: Array<string> = []
-    let red = NUMBER_OF_RED
-    let blue = NUMBER_OF_BLUE
-    for (let i = 0; i < numberOfColors; i++) {
+  let colors: Array<string> = []
+  let red = NUMBER_OF_RED
+  let blue = NUMBER_OF_BLUE
+  for (let i = 0; i < numberOfColors; i++) {
         // Make sure red is always in the grid
         if (i == numberOfColors - 1) {
             if (red > 0) {
@@ -23,7 +21,7 @@ const generateColors = (numberOfColors: number): Array<string> => {
                 continue
             }
         }
-        const color = getRandomInt(10)
+        const color = randomUtils.getRandomInt(10)
         if (color === 0) {
             if (red > 0) {
                 colors = [...colors, RED]
