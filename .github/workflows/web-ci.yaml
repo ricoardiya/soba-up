@@ -33,10 +33,6 @@ jobs:
         working-directory: ./packages/web
         run: yarn install
 
-      - name: Lint
-        working-directory: ./packages/web
-        run: yarn lint
-
       - name: Build
         working-directory: ./packages/web
         run: yarn build
