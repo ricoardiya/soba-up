@@ -13,6 +13,16 @@ overrides:
       trailingComma: 'none'
       printWidth: 80
   - files:
+      - '*.js'
+    options:
+      parser: 'babel'
+      arrowParens: 'avoid'
+      bracketSpacing: true
+      proseWrap: 'never'
+      singleQuote: true
+      trailingComma: 'none'
+      printWidth: 80
+  - files:
       - '*.css'
     options:
       parser: 'css'

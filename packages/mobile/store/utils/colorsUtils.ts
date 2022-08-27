@@ -5,48 +5,47 @@ const RED = 'red'
 const WHITE = 'white'
 const BLUE = 'blue'
 
-
 const getRandomInt = (max: number) => {
-    return Math.floor(Math.random() * max)
+  return Math.floor(Math.random() * max)
 }
 
 const generateColors = (numberOfColors: number): Array<string> => {
-    let colors: Array<string> = []
-    let red = NUMBER_OF_RED
-    let blue = NUMBER_OF_BLUE
-    for (let i = 0; i < numberOfColors; i++) {
-        // Make sure red is always in the grid
-        if (i == numberOfColors - 1) {
-            if (red > 0) {
-                colors = [...colors, RED]
-                red = red - 1
-                continue
-            }
-        }
-        const color = getRandomInt(10)
-        if (color === 0) {
-            if (red > 0) {
-                colors = [...colors, RED]
-                red = red - 1
-                continue
-            }
-        }
-        if (color === 1) {
-            if (blue > 0) {
-                colors = [...colors, BLUE]
-                blue = blue - 1
-                continue
-            }
-        }
-        colors = [...colors, WHITE]
+  let colors: Array<string> = []
+  let red = NUMBER_OF_RED
+  let blue = NUMBER_OF_BLUE
+  for (let i = 0; i < numberOfColors; i++) {
+    // Make sure red is always in the grid
+    if (i == numberOfColors - 1) {
+      if (red > 0) {
+        colors = [...colors, RED]
+        red = red - 1
+        continue
+      }
     }
-    return colors
+    const color = getRandomInt(10)
+    if (color === 0) {
+      if (red > 0) {
+        colors = [...colors, RED]
+        red = red - 1
+        continue
+      }
+    }
+    if (color === 1) {
+      if (blue > 0) {
+        colors = [...colors, BLUE]
+        blue = blue - 1
+        continue
+      }
+    }
+    colors = [...colors, WHITE]
+  }
+  return colors
 }
 
 export default {
-    generateColors,
-    NUMBER_OF_COLORS,
-    RED,
-    BLUE,
-    WHITE
+  generateColors,
+  NUMBER_OF_COLORS,
+  RED,
+  BLUE,
+  WHITE
 }

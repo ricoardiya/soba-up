@@ -5,7 +5,7 @@ mobile:
   - packages/mobile/*
 
 docs:
-  - "*.md"
+  - '*.md'
 
 ci:
   - .github/*

@@ -4,9 +4,9 @@
  * @return {Promise<void>} A promise that resolves when the given time has ended.
  */
 const delay = (ms: number): Promise<void> => {
-  return new Promise(resolve => setTimeout(resolve, ms));
-};
+  return new Promise(resolve => setTimeout(resolve, ms))
+}
 
 export default {
-  delay,
-};
+  delay
+}
