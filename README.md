@@ -12,6 +12,7 @@
 <hr />
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+<a href="https://github.com/ricoardiya/soba-up/actions/workflows/web-ci.yml"><img src="https://github.com/ricoardiya/soba-up/actions/workflows/web-ci.yml/badge.svg" alt="GitHub Actions status"></a>
 
 Web
 
@@ -26,3 +27,7 @@ Mobile
 cd packages/mobile
 yarn start
 ```
+
+### Contributors
+
+
