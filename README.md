@@ -34,6 +34,19 @@ Environment variables
 export TWILIO_ACCOUNT_ID=<redacted>
 export TWILIO_AUTH_TOKEN=<redacted>
 export TWILIO_MESSAGE_SERVICE_ID=<redacted>
+export DATABASE_URL="postgresql://sobaup:sobaup@localhost:5432/sobaup"
+```
+
+run database locally
+
+```shell
+docker-compose up
+```
+
+migrate db
+
+```shell
+prisma migrate dev
 ```
 
 run locally
