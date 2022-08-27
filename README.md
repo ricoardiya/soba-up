@@ -44,7 +44,7 @@ yarn install
 yarn dev
 ```
 
-#### Run mobile
+#### Run mobile :iphone:
 
 ```shell
 cd packages/mobile
