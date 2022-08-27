@@ -1,11 +1,11 @@
 web:
-  - packages/web/*
+  - packages/web/**/*
 
 mobile:
-  - packages/mobile/*
+  - packages/mobile/**/*
 
 docs:
   - "*.md"
 
 ci:
-  - .github/*
+  - .github/**/*
