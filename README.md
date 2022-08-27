@@ -11,7 +11,7 @@
 
 Soba Up is an Application which analyses the level of alcohol/substance impairment through a series of games designed to test cognitive abilities to determine an individual's level of awareness.
 
-## To start developing Soba Up
+## Running the project locally
 
 <hr />
 
