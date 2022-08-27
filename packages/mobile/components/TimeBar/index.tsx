@@ -1,8 +1,8 @@
 import { View } from 'react-native-animatable';
 import { Animated, Easing } from 'react-native';
 import styles from './index.style';
-import metrics from '../../../config/metrics';
-import timings from '../../../config/timings';
+import metrics from '../../config/metrics';
+import timings from '../../config/timings';
 import {useEffect, useState} from "react";
 
 export default function TimeBar() {
