@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { View } from '../../components/Themed'
 import styles from './index.style'
-import TimeBar from './TimeBar'
+import TimeBar from '../../components/TimeBar'
 import Grid from './Grid'
 import { useAppDispatch, useAppSelector } from '../../store/hooks'
 import {
@@ -11,7 +11,7 @@ import {
 import { Text } from 'react-native'
 
 export default function GameTwo() {
-  const gameTwoState = useAppSelector(state => state.gameTwoReducer)
+  const gameTwoState = useAppSelector(state => state.gameTwoReducers)
   const dispatch = useAppDispatch()
 
   useEffect(() => {

@@ -29,6 +29,11 @@ const linking: LinkingOptions<RootStackParamList> = {
             screens: {
               GameTwoScreen: 'game2'
             }
+          },
+          GameOne: {
+            screens: {
+              GameOneScreen: 'game1'
+            }
           }
         }
       },
