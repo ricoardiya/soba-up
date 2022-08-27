@@ -1,20 +1,23 @@
 import { StyleSheet } from 'react-native'
+import colors from '../../config/colors'
 
 export default StyleSheet.create({
-  box: {
-    width: 70,
-    height: 70,
-    borderColor: 'black',
-    borderRadius: 50,
-    margin: 25,
-    backgroundColor: 'black',
+  tapBorder: {
+    justifyContent: 'center',
     alignSelf: 'center',
-    textAlign: 'center'
+    marginTop: 20,
+    width: 100,
+    height: 100,
+    borderColor: colors.DEFAULT_BLACK,
+    borderWidth: 2,
+    borderRadius: 120
   },
-  text: {
-    textAlign: 'center',
-    fontWeight: 'bold',
-    color: 'white',
-    marginVertical: 27
+  tapButton: {
+    justifyContent: 'center',
+    alignSelf: 'center',
+    width: 75,
+    height: 75,
+    backgroundColor: colors.DEFAULT_BLACK,
+    borderRadius: 100
   }
 })

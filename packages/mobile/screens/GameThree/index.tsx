@@ -17,14 +17,14 @@ export default function GameThree() {
 
   useEffect(() => {
     dispatch(startGameThreeAction())
-    // dispatch(startTimerAction())
+    dispatch(startTimerAction())
   }, [])
 
   return (
     <View style={styles.container}>
       {gameThreeState.isGameRunning && (
         <>
-          {/* <TimeBar/> */}
+          <TimeBar />
           <Grid circleProps={gameThreeState.circleProps} />
           <Text style={[styles.text]}>Tap and remove the blurry circles!</Text>
           <Done />
@@ -32,7 +32,11 @@ export default function GameThree() {
       )}
       {!gameThreeState.isGameRunning && (
         <>
-          <Text>your score is {gameThreeState.score}</Text>
+          <Text>
+            You got {gameThreeState.numCorrect} out of {gameThreeState.numBlur}{' '}
+            circles!
+          </Text>
+          <Text>You clicked on {gameThreeState.numWrong} wrong circles!</Text>
         </>
       )}
     </View>

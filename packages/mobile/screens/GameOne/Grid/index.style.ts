@@ -1,28 +1,28 @@
-import { StyleSheet } from 'react-native';
-import colors from "../../../config/colors";
+import { StyleSheet } from 'react-native'
+import colors from '../../../config/colors'
 
 export default StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignSelf: "center"
+    justifyContent: 'center',
+    alignSelf: 'center'
   },
   bigCircle: {
     width: 250,
     height: 250,
     borderRadius: 200,
     borderWidth: 2,
-    borderStyle: "dashed",
+    borderStyle: 'dashed',
     borderColor: colors.DEFAULT_BLACK
   },
   smallCircle: {
-    position: "absolute",
+    position: 'absolute',
     width: 50,
     height: 50,
     borderWidth: 2,
     borderRadius: 50,
     borderColor: colors.DEFAULT_BLACK,
-    backgroundColor: "white",
+    backgroundColor: 'white'
   },
   topCircle: {
     top: -25,
@@ -41,16 +41,16 @@ export default StyleSheet.create({
     right: -25
   },
   targetBorder: {
-    borderColor: colors.GREEN_CIRCLE,
+    borderColor: colors.GREEN_CIRCLE
   },
   decoyBorder: {
     borderColor: colors.RED_CIRCLE
   },
   blackBorder: {
-    borderColor: "black"
+    borderColor: 'black'
   },
   movingCircle: {
-    position: "absolute",
+    position: 'absolute',
     width: 50,
     height: 50,
     borderRadius: 50,
@@ -60,8 +60,8 @@ export default StyleSheet.create({
     left: 100
   },
   tapBorder: {
-    justifyContent: "center",
-    alignSelf: "center",
+    justifyContent: 'center',
+    alignSelf: 'center',
     marginTop: 40,
     width: 120,
     height: 120,
@@ -70,11 +70,11 @@ export default StyleSheet.create({
     borderRadius: 120
   },
   tapButton: {
-    justifyContent: "center",
-    alignSelf: "center",
+    justifyContent: 'center',
+    alignSelf: 'center',
     width: 90,
     height: 90,
     backgroundColor: colors.DEFAULT_BLACK,
     borderRadius: 100
   }
-});
+})

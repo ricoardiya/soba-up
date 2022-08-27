@@ -1,19 +1,19 @@
-import {createReducer} from "@reduxjs/toolkit";
+import { createReducer } from '@reduxjs/toolkit'
 import {
-    increaseScoreGameOneAction,
-    nextLevelGameOneAction,
-    startGameOneAction,
-    startTimerAction
-} from "../actions/gameOneActions";
-import randomUtils from "../utils/randomUtils";
+  increaseScoreGameOneAction,
+  nextLevelGameOneAction,
+  startGameOneAction,
+  startTimerAction
+} from '../actions/gameOneActions'
+import randomUtils from '../utils/randomUtils'
 
 interface GameOneState {
   isGameRunning: boolean
-  score: number,
-  level: number,
-  targetPos: number,
-  decoyPos1: number,
-  decoyPos2: number,
+  score: number
+  level: number
+  targetPos: number
+  decoyPos1: number
+  decoyPos2: number
 }
 
 export const initialGameOneState: GameOneState = {
@@ -22,10 +22,10 @@ export const initialGameOneState: GameOneState = {
   level: 1,
   targetPos: 0,
   decoyPos1: 0,
-  decoyPos2: 0,
+  decoyPos2: 0
 }
 
-export const gameOneReducers = createReducer(initialGameOneState, (builder) => {
+export const gameOneReducers = createReducer(initialGameOneState, builder => {
   builder
     .addCase(startGameOneAction, (state, action) => {
       state.score = 0
