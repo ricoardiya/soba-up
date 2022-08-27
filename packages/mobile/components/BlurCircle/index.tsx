@@ -10,6 +10,7 @@ import { useState } from 'react';
 export default function BlurCircle({ circleProp, idx }: { circleProp: string, idx: string }) {
     const [style, setStyle] = useState(styles.box);
 
+
     const dispatch = useAppDispatch()
 
     const onPress = () => {
