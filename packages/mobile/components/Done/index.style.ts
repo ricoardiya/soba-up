@@ -4,10 +4,10 @@ export default StyleSheet.create({
     box: {
         width: 70,
         height: 70,
-        borderColor: "black",
+        borderColor: "#202020",
         borderRadius: 50,
         margin: 25,
-        backgroundColor: "black",
+        backgroundColor: "#202020",
         alignSelf: "center",
         textAlign: "center"
     },

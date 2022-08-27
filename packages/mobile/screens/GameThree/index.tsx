@@ -14,7 +14,7 @@ export default function GameThree() {
 
     useEffect(() => {
         dispatch(startGameThreeAction())
-        // dispatch(startTimerAction())
+        dispatch(startTimerAction())
     }, [])
 
     return (
@@ -22,7 +22,7 @@ export default function GameThree() {
             {gameThreeState.isGameRunning &&
                 (
                     <>
-                        {/* <TimeBar/> */}
+                        <TimeBar/>
                         <Grid circleProps={gameThreeState.circleProps} />
                         <Text style={[styles.text]}>Tap and remove the blurry circles!</Text>
                         <Done />
