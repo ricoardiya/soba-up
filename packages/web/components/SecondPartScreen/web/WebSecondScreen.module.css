@@ -1,0 +1,45 @@
+.left {
+  width: 50%;
+}
+.right {
+  position: relative;
+  width: 50%;
+  right: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  margin: 3rem;
+  margin-right: 10rem;
+  margin-left: 10rem;
+  margin-top: 0rem;
+}
+
+.sobaUpBg h1 {
+  color: white;
+  -webkit-text-stroke: 0.1px #de6fa1;
+  padding-left: 3rem;
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+
+.secondTextHeader h1 {
+  position: absolute;
+  width: 75%;
+  top: 15%;
+  right: 47%;
+  color: #de6fa1;
+  -webkit-text-stroke: 0;
+}
+
+.textHeader {
+  margin-bottom: 3rem;
+}
+
+.textContainer {
+  z-index: 1;
+}

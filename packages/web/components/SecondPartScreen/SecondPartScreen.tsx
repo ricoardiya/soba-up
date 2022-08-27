@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import WebFirstScreen from './web/WebFirstScreen';
-import MobileFirstScreen from './mobile/MobileFirstScreen';
+import WebSecondScreen from './web/WebSecondScreen';
+import MobileSecondScreen from './mobile/MobileSecondScreen';
 
-const FirstPartScreen = () => {
+const SecondPartScreen = () => {
   const [windowWidth, setWindowWidth] = React.useState(0);
 
   const updateDimensions = () => {
@@ -20,7 +20,7 @@ const FirstPartScreen = () => {
     };
   }, []);
 
-  return windowWidth > 1401 ? <WebFirstScreen /> : <MobileFirstScreen />;
+  return windowWidth > 1401 ? <WebSecondScreen /> : <MobileSecondScreen />;
 };
 
-export default FirstPartScreen;
+export default SecondPartScreen;

@@ -1,26 +1,20 @@
 import React from 'react';
 import Image from 'next/image';
-import Zz from '../zz1.png';
-import styles from './MobileFirstScreen.module.css';
-import Collage from '../collage1.png';
+import styles from './MobileSecondScreen.module.css';
 import Pattern from '../../pattern.png';
 import { Button } from '@mui/material';
 
-const MobileFirstScreen = () => {
+const MobileSecondScreen = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.collageImage}>
-        <Image src={Collage} />;
-      </div>
+      <div className={styles.collageImage}></div>
       <div className={styles.textParentContainer}>
         <div className={styles.textContainer}>
           <div className={styles.headerContainer}>
             <div>
               <h1>soba up</h1>
             </div>
-            <div className={styles.zzImage}>
-              <Image src={Zz} layout="fixed" width="100px" height="100px" />
-            </div>
+            <div className={styles.zzImage}></div>
           </div>
           <div className={styles.hr}></div>
           <h2>Be safe on a night out</h2>
@@ -42,4 +36,4 @@ const MobileFirstScreen = () => {
   );
 };
 
-export default MobileFirstScreen;
+export default MobileSecondScreen;

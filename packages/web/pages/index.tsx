@@ -3,6 +3,7 @@ import { createTheme } from '@mui/material';
 import HeaderBar from '../components/HeaderBar/HeaderBar';
 import { ThemeProvider } from '@emotion/react';
 import FirstPartScreen from '../components/FirstPartScreen/FirstPartScreen';
+import SecondPartScreen from '../components/SecondPartScreen/SecondPartScreen';
 
 const theme = createTheme({
   palette: {
@@ -21,6 +22,7 @@ export default function Home() {
       <div>
         <HeaderBar />
         <FirstPartScreen />
+        <SecondPartScreen />
       </div>
     </ThemeProvider>
   );
