@@ -10,9 +10,9 @@ export default function BlurCircle({ circleProp, idx }: { circleProp: string, id
     const gameThreeState = useAppSelector((state) => state.gameThreeReducer)
     const dispatch = useAppDispatch()
 
-    const onPress = () => {
-        dispatch(toogleCircle(idx))
-    };
+  const onPress = () => {
+    dispatch(toogleCircle(idx))
+  }
 
     let styleCircle = [];
     if (gameThreeState.circleClicked[parseInt(idx)] === 1) {
@@ -27,9 +27,9 @@ export default function BlurCircle({ circleProp, idx }: { circleProp: string, id
         }
     }
 
-    return (
-        <TouchableWithoutFeedback onPress={onPress}>
-            <View style={styleCircle} />
-        </TouchableWithoutFeedback>
-    )
+  return (
+    <TouchableWithoutFeedback onPress={onPress}>
+      <View style={styleCircle} />
+    </TouchableWithoutFeedback>
+  )
 }

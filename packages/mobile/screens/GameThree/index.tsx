@@ -1,16 +1,19 @@
-import React, { useEffect } from 'react';
-import { View } from '../../components/Themed';
-import styles from './index.style';
-import TimeBar from "./TimeBar";
-import Grid from "./Grid";
-import Done from "../../components/Done";
-import { useAppDispatch, useAppSelector } from "../../store/hooks";
-import { startGameThreeAction, startTimerAction } from "../../store/actions/gameThreeActions";
-import { Text } from "react-native";
+import React, { useEffect } from 'react'
+import { View } from '../../components/Themed'
+import styles from './index.style'
+import TimeBar from './TimeBar'
+import Grid from './Grid'
+import Done from '../../components/Done'
+import { useAppDispatch, useAppSelector } from '../../store/hooks'
+import {
+  startGameThreeAction,
+  startTimerAction
+} from '../../store/actions/gameThreeActions'
+import { Text } from 'react-native'
 
 export default function GameThree() {
-    const gameThreeState = useAppSelector((state) => state.gameThreeReducer)
-    const dispatch = useAppDispatch()
+  const gameThreeState = useAppSelector(state => state.gameThreeReducer)
+  const dispatch = useAppDispatch()
 
     useEffect(() => {
         dispatch(startGameThreeAction())

@@ -1,11 +1,11 @@
-import {createReducer} from "@reduxjs/toolkit";
+import { createReducer } from '@reduxjs/toolkit'
 import {
-    startGameThreeAction,
-    startTimerAction,
-    toogleCircle,
-    finishGame
-} from "../actions/gameThreeActions";
-import blurryUtils from "../utils/blurryUtils";
+  startGameThreeAction,
+  startTimerAction,
+  toogleCircle,
+  finishGame
+} from '../actions/gameThreeActions'
+import blurryUtils from '../utils/blurryUtils'
 
 interface GameThreeState {
     isGameRunning: boolean
@@ -29,7 +29,9 @@ export const initialGameThreeState: GameThreeState = {
     numWrong: 0
 }
 
-export const gameThreeReducer = createReducer(initialGameThreeState, (builder) => {
+export const gameThreeReducer = createReducer(
+  initialGameThreeState,
+  builder => {
     builder
         .addCase(startGameThreeAction, (state, action) => {
             state.isGameRunning = true

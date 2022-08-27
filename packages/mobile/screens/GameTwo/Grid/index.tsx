@@ -1,23 +1,26 @@
-import React from 'react';
-import { View } from 'react-native-animatable';
+import React from 'react'
+import { View } from 'react-native-animatable'
 
-import Circle from "../../../components/Circle";
-import styles from "./index.style";
+import Circle from '../../../components/Circle'
+import styles from './index.style'
 
-export default function Grid ({colors}: {colors: Array<string>}) {
+export default function Grid({ colors }: { colors: Array<string> }) {
   return (
-    <View style={{flex: 1, justifyContent: "center", alignSelf:"center"}}>
-      <View style={[styles.container, {
-        flexDirection: "column",
-        flexWrap: "wrap",
-        justifyContent: "space-evenly"
-      }]}>
+    <View style={{ flex: 1, justifyContent: 'center', alignSelf: 'center' }}>
+      <View
+        style={[
+          styles.container,
+          {
+            flexDirection: 'column',
+            flexWrap: 'wrap',
+            justifyContent: 'space-evenly'
+          }
+        ]}
+      >
         {colors.map((color, index) => {
-          return (
-            <Circle key={index.toString()} color={color} />
-          )
+          return <Circle key={index.toString()} color={color} />
         })}
       </View>
     </View>
-  );
+  )
 }

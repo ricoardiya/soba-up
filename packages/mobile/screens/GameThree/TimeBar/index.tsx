@@ -1,21 +1,21 @@
-import { View } from 'react-native-animatable';
-import { Animated, Easing } from 'react-native';
-import styles from './index.style';
-import metrics from '../../../config/metrics';
-import timings from '../../../config/timings';
-import {useEffect, useState} from "react";
+import { View } from 'react-native-animatable'
+import { Animated, Easing } from 'react-native'
+import styles from './index.style'
+import metrics from '../../../config/metrics'
+import timings from '../../../config/timings'
+import { useEffect, useState } from 'react'
 
 export default function TimeBar() {
-    const [animateValue] = useState(new Animated.Value(timings.TIME_LIMIT_MS))
+  const [animateValue] = useState(new Animated.Value(timings.TIME_LIMIT_MS))
 
-    useEffect(() => {
-        Animated.timing(animateValue, {
-            useNativeDriver: false,
-            duration: timings.TIME_LIMIT_MS,
-            easing: Easing.linear,
-            toValue: 0
-        }).start()
-    }, [])
+  useEffect(() => {
+    Animated.timing(animateValue, {
+      useNativeDriver: false,
+      duration: timings.TIME_LIMIT_MS,
+      easing: Easing.linear,
+      toValue: 0
+    }).start()
+  }, [])
 
     // Animate the TimeBar color from grey to red, starting when there are left only 12 seconds
     // const backgroundColor = animateValue.interpolate({
