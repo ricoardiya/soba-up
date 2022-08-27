@@ -42,6 +42,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
+    "@types/matter-js": "^0.18.1",
     "@types/react": "~18.0.14",
     "@types/react-native": "~0.69.1",
     "expo-yarn-workspaces": "^2.0.2",
