@@ -2,7 +2,7 @@
 
 <div align="center">
   <img src="docs/images/soba-up.png" alt="Tech Interview Handbook" width="400" />
-  <h2>Be sage on a night out</h2>
+  <h2>Be safe on a night out</h2>
   <p>Drunk driving is one of the leading causes of traffic accidents in the world. Indonesia is no exception.</p>
   
 </div>
