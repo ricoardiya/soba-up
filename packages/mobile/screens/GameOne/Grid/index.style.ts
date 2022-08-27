@@ -55,4 +55,22 @@ export default StyleSheet.create({
     top: -25,
     left: 100
   },
+  tapBorder: {
+    justifyContent: "center",
+    alignSelf: "center",
+    marginTop: 40,
+    width: 120,
+    height: 120,
+    borderColor: colors.DEFAULT_BLACK,
+    borderWidth: 1,
+    borderRadius: 120
+  },
+  tapButton: {
+    justifyContent: "center",
+    alignSelf: "center",
+    width: 90,
+    height: 90,
+    backgroundColor: colors.DEFAULT_BLACK,
+    borderRadius: 100
+  }
 });
