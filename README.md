@@ -3,11 +3,15 @@
 <div align="center">
   <img src="docs/images/soba-up.png" alt="Tech Interview Handbook" width="400" />
   <h2>Be sage on a night out</h2>
+  <p>Drunk driving is one of the leading causes of traffic accidents in the world. Indonesia is no exception.</p>
   
 </div>
 
+## Introduction
 
-### To start developing Soba Up
+Soba Up is an Application which analyses the level of alcohol/substance impairment through a series of games designed to test cognitive abilities to determine an individual's level of awareness.
+
+## To start developing Soba Up
 
 <hr />
 
@@ -28,7 +32,7 @@ cd packages/mobile
 yarn start
 ```
 
-### Contributors
+## Contributors
 
 [@ricoardiya](https://github.com/ricoardiya)
 [@elsatmr](https://github.com/elsatmr)
