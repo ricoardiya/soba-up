@@ -8,7 +8,7 @@ import {startGameTwoAction, startTimerAction} from "../../store/actions/gameTwoA
 import {Text} from "react-native";
 
 export default function GameTwo() {
-  const gameTwoState = useAppSelector((state) => state.gameTwoReducer)
+  const gameTwoState = useAppSelector((state) => state.gameTwoReducers)
   const dispatch = useAppDispatch()
 
   useEffect(() => {

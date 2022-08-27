@@ -23,7 +23,7 @@ export const initialGameTwoState: GameTwoState = {
     colors: []
 }
 
-export const gameTwoReducer = createReducer(initialGameTwoState, (builder) => {
+export const gameTwoReducers = createReducer(initialGameTwoState, (builder) => {
     builder
         .addCase(startGameTwoAction, (state, action) => {
             state.score = 0
