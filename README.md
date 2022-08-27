@@ -4,7 +4,7 @@
   <img src="docs/images/soba-up.png" alt="Tech Interview Handbook" width="400" />
   <h2>Be safe on a night out</h2>
   <p>Drunk driving is one of the leading causes of traffic accidents in the world. Indonesia is no exception.</p>
-  
+
 </div>
 
 ## Introduction
@@ -19,17 +19,36 @@ Soba Up is an Application which analyses the level of alcohol/substance impairme
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 ![](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)
 
-Web
+#### Before you start
+
+```shell
+yarn install
+npx lerna bootstrap
+```
+
+#### :computer: Run web
+
+Environment variables
+
+```shell
+export TWILIO_ACCOUNT_ID=<redacted>
+export TWILIO_AUTH_TOKEN=<redacted>
+export TWILIO_MESSAGE_SERVICE_ID=<redacted>
+```
+
+run locally
 
 ```shell
 cd packages/web
+yarn install
 yarn dev
 ```
 
-Mobile
+#### :iphone: Run mobile
 
 ```shell
 cd packages/mobile
+yarn install
 yarn start
 ```
 
