@@ -1,0 +1,15 @@
+version: '3.5'
+services:
+  dbsvc:
+    image: 'postgres'
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=sobaup
+      - POSTGRES_PASSWORD=sobaup
+      - POSTGRES_DB=sobaup
+    volumes:
+      - database-data:/var/lib/postgresql/data/
+
+volumes:
+  database-data:
