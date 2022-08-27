@@ -22,7 +22,11 @@ export default function GameOne() {
         (
           <>
             <TimeBar />
-            <Grid targetPos={gameOneState.targetPos}/>
+            <Grid
+              targetPos={gameOneState.targetPos}
+              decoyPos1={gameOneState.decoyPos1}
+              decoyPos2={gameOneState.decoyPos2}
+            />
           </>
         )
       }

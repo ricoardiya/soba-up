@@ -40,8 +40,11 @@ export default StyleSheet.create({
     top: 100,
     right: -25
   },
-  redBorder: {
-    borderColor: colors.RED_CIRCLE,
+  targetBorder: {
+    borderColor: colors.GREEN_CIRCLE,
+  },
+  decoyBorder: {
+    borderColor: colors.RED_CIRCLE
   },
   blackBorder: {
     borderColor: "black"

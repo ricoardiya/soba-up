@@ -8,12 +8,11 @@ const WHITE = 'white'
 const BLUE = 'blue'
 
 
-
 const generateColors = (numberOfColors: number): Array<string> => {
-    let colors: Array<string> = []
-    let red = NUMBER_OF_RED
-    let blue = NUMBER_OF_BLUE
-    for (let i = 0; i < numberOfColors; i++) {
+  let colors: Array<string> = []
+  let red = NUMBER_OF_RED
+  let blue = NUMBER_OF_BLUE
+  for (let i = 0; i < numberOfColors; i++) {
         // Make sure red is always in the grid
         if (i == numberOfColors - 1) {
             if (red > 0) {
