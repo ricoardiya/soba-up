@@ -5,14 +5,14 @@ import TimeBar from "../../components/TimeBar";
 import Grid from "./Grid";
 import {useAppDispatch, useAppSelector} from "../../store/hooks";
 import {Text} from "react-native";
-import {startGameTwoAction, startTimerAction} from "../../store/actions/gameTwoActions";
+import {startGameOneAction, startTimerAction} from "../../store/actions/gameOneActions";
 
 export default function GameOne() {
   const gameOneState = useAppSelector((state) => state.gameOneReducers)
   const dispatch = useAppDispatch()
 
   useEffect(() => {
-    dispatch(startGameTwoAction())
+    dispatch(startGameOneAction())
     dispatch(startTimerAction())
   }, [])
 
@@ -22,7 +22,7 @@ export default function GameOne() {
         (
           <>
             <TimeBar />
-            <Grid />
+            <Grid targetPos={gameOneState.targetPos}/>
           </>
         )
       }

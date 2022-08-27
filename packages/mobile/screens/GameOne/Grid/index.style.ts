@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import colors from "../../../config/colors";
 
 export default StyleSheet.create({
   container: {
@@ -10,56 +11,47 @@ export default StyleSheet.create({
     width: 250,
     height: 250,
     borderRadius: 200,
-    borderWidth: 1
+    borderWidth: 1,
+    borderStyle: "dashed"
   },
-  topCircle: {
+  smallCircle: {
     position: "absolute",
     width: 50,
     height: 50,
     borderWidth: 1,
     borderRadius: 50,
     backgroundColor: "white",
+  },
+  topCircle: {
     top: -25,
     left: 100
   },
   bottomCircle: {
-    position: "absolute",
-    width: 50,
-    height: 50,
-    borderWidth: 1,
-    borderRadius: 50,
-    backgroundColor: "white",
     bottom: -25,
     left: 100
   },
   leftCircle: {
-    position: "absolute",
-    width: 50,
-    height: 50,
-    borderWidth: 1,
-    borderRadius: 50,
-    backgroundColor: "white",
     top: 100,
     left: -25
   },
   rightCircle: {
-    position: "absolute",
-    width: 50,
-    height: 50,
-    borderWidth: 1,
-    borderRadius: 50,
-    backgroundColor: "white",
     top: 100,
     right: -25
   },
-  redCircle: {
+  redBorder: {
+    borderWidth: 2,
+    borderColor: colors.RED_CIRCLE,
+  },
+  blackBorder: {
+    borderColor: "black"
+  },
+  movingCircle: {
     position: "absolute",
     width: 50,
     height: 50,
-    borderWidth: 1,
     borderRadius: 50,
     zIndex: 10,
-    backgroundColor: "red",
+    backgroundColor: colors.GREEN_CIRCLE,
     top: -25,
     left: 100
   },
