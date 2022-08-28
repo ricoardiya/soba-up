@@ -15,7 +15,7 @@ Soba Up is an Application which analyses the level of alcohol/substance impairme
 
 <hr />
 
-<a href="https://github.com/ricoardiya/soba-up/actions/workflows/web-ci.yml"><img src="https://github.com/ricoardiya/soba-up/actions/workflows/web-ci.yml/badge.svg" alt="GitHub Actions status"></a>
+<a href="https://github.com/ricoardiya/soba-up/actions/workflows/web-ci.yaml"><img src="https://github.com/ricoardiya/soba-up/actions/workflows/web-ci.yaml/badge.svg" alt="GitHub Actions status"></a>
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 ![](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)
 
