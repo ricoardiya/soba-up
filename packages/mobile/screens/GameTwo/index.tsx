@@ -4,11 +4,9 @@ import styles from './index.style'
 import TimeBar from '../../components/TimeBar'
 import Grid from './Grid'
 import { useAppDispatch, useAppSelector } from '../../store/hooks'
-import {
-  startGameTwoAction,
-  startTimerAction
-} from '../../store/actions/gameTwoActions'
+import { startGameTwoAction } from '../../store/actions/gameTwoActions'
 import { Text } from 'react-native'
+import { startTimerAction } from '../../store/actions/gameActions'
 
 export default function GameTwo() {
   const gameTwoState = useAppSelector(state => state.gameTwoReducers)
