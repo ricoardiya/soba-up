@@ -7,6 +7,7 @@ import Navigation from './navigation'
 import { store } from './store'
 import { Provider } from 'react-redux'
 import HomeScreen from './screens/HomeScreen/HomeScreen'
+import SignUpScreen from './screens/SignUpScreen.tsx/SignUpScreen'
 
 export default function App() {
   const isLoadingComplete = useCachedResources()
@@ -20,6 +21,8 @@ export default function App() {
         <SafeAreaProvider>
           {/* <Navigation colorScheme={colorScheme} /> */}
           {/* <HomeScreen /> */}
+          <SignUpScreen />
+
           <StatusBar />
         </SafeAreaProvider>
       </Provider>
