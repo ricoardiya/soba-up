@@ -16,6 +16,8 @@ import GameTwo from './screens/GameTwo'
 import Games from './screens/Games'
 import GameOne from './screens/GameOne'
 import GameThree from './screens/GameThree'
+import DisclaimerScreen from './screens/DisclaimerScreen/DisclaimerScreen'
+import ResultScreen from './screens/ResultScreen/ResultScreen'
 
 export default function App() {
   const isLoadingComplete = useCachedResources()
@@ -33,8 +35,11 @@ export default function App() {
           {/* <EmergencyContactScreen /> */}
           {/* <SplashScreen /> */}
           {/* <WelcomeScreen /> */}
-          {/*<LoginScreen />*/}
-          <Games />
+          {/* <LoginScreen />*/}
+          {/* <Games />*/}
+          {/* <LoginScreen /> */}
+          {/* <DisclaimerScreen /> */}
+          <ResultScreen />
           <StatusBar />
         </SafeAreaProvider>
       </Provider>

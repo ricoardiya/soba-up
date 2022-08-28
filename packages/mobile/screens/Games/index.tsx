@@ -8,20 +8,19 @@ import GameThree from '../GameThree'
 import { Text } from 'react-native'
 
 export default function Games() {
-  const gameReducers = useAppSelector(state => state.gameReducers)
+  const gameState = useAppSelector(state => state.gameReducers)
   const dispatch = useAppDispatch()
 
   useEffect(() => {
     dispatch(startGameOneAction())
   }, [])
 
-  console.log(gameReducers.currentGame)
   return (
     <View style={{ flex: 1, marginTop: 50, paddingBottom: 100 }}>
-      {gameReducers.currentGame === 1 && <GameOne />}
-      {gameReducers.currentGame === 2 && <GameTwo />}
-      {gameReducers.currentGame === 3 && <GameThree />}
-      {gameReducers.isEndGame && <Text>End Game</Text>}
+      {gameState.currentGame === 1 && <GameOne />}
+      {gameState.currentGame === 2 && <GameTwo />}
+      {gameState.currentGame === 3 && <GameThree />}
+      {gameState.isEndGame && <Text>End Game</Text>}
     </View>
   )
 }
