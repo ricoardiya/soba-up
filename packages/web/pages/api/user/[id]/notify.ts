@@ -37,7 +37,7 @@ export default async function handler(
       if (req.body.notify) {
         message = await twilioClient.messages.create({
           body: `Hello! This is Soba Up! This text is a notification that ${userName} is in emergency`,
-          from: 'whatsapp:' + userPhoneNum,
+          from: 'whatsapp:+14155238886',
           to: 'whatsapp:' + emergencyPhoneNum
         })
       }
@@ -55,7 +55,7 @@ export default async function handler(
         message = await twilioClient.messages.create({
           body: `Hello! This is Soba Up! This text is a notification that ${userName} is in emergency`,
           messagingServiceSid: messageServiceID,
-          to: req.body.number
+          to: emergencyPhoneNum
         })
       }
       return res.status(200).json({
