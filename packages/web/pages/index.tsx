@@ -5,6 +5,7 @@ import { ThemeProvider } from '@emotion/react';
 import FirstPartScreen from '../components/FirstPartScreen/FirstPartScreen';
 import SecondPartScreen from '../components/SecondPartScreen/SecondPartScreen';
 import ThirdPartScreen from '../components/ThirdPartScreen/ThirdPartScreen';
+import FourthPartScreen from '../components/FourthPartScreen/FourthPartScreen';
 
 const theme = createTheme({
   palette: {
@@ -25,6 +26,7 @@ export default function Home() {
         <FirstPartScreen />
         <SecondPartScreen />
         <ThirdPartScreen />
+        <FourthPartScreen />
       </div>
     </ThemeProvider>
   );
