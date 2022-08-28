@@ -10,7 +10,7 @@ const MobileFirstScreen = () => {
   return (
     <div className={styles.container}>
       <div className={styles.collageImage}>
-        <Image src={Collage} />;
+        <Image alt={'collage'} src={Collage} />;
       </div>
       <div className={styles.textParentContainer}>
         <div className={styles.textContainer}>
@@ -19,7 +19,13 @@ const MobileFirstScreen = () => {
               <h1>soba up</h1>
             </div>
             <div className={styles.zzImage}>
-              <Image src={Zz} layout="fixed" width="100px" height="100px" />
+              <Image
+                alt={'zz'}
+                src={Zz}
+                layout="fixed"
+                width="100px"
+                height="100px"
+              />
             </div>
           </div>
           <div className={styles.hr}></div>
@@ -34,7 +40,7 @@ const MobileFirstScreen = () => {
             </Button>
           </div>
           <div className={styles.pattern}>
-            <Image src={Pattern} />
+            <Image alt={'pattern'} src={Pattern} />
           </div>
         </div>
       </div>

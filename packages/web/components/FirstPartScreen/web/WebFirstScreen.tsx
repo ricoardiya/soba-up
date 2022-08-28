@@ -16,7 +16,13 @@ const WebFirstScreen = () => {
               <h1>soba up</h1>
             </div>
             <div className={styles.zzImage}>
-              <Image src={Zz} layout="fixed" width="100px" height="100px" />
+              <Image
+                alt={'zz'}
+                src={Zz}
+                layout="fixed"
+                width="100px"
+                height="100px"
+              />
             </div>
           </div>
           <div className={styles.hr}></div>
@@ -31,11 +37,11 @@ const WebFirstScreen = () => {
             </Button>
           </div>
           <div className={styles.pattern}>
-            <Image src={Pattern} />
+            <Image alt={'pattern'} src={Pattern} />
           </div>
         </div>
         <div className={styles.right}>
-          <Image src={Collage} layout="responsive" />
+          <Image alt={'collage'} src={Collage} layout="responsive" />
         </div>
       </div>
     </div>

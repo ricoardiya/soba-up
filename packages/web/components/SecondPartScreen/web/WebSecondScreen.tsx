@@ -10,7 +10,7 @@ const WebSecondScreen = () => {
     <div className={styles.parent}>
       <div className={styles.container}>
         <div className={styles.left}>
-          <Image src={Collage} layout="responsive" />
+          <Image alt={'collage'} src={Collage} layout="responsive" />
         </div>
         <div className={styles.right}>
           <div className={styles.textHeader}>
@@ -25,10 +25,10 @@ const WebSecondScreen = () => {
             <h3>Soba Up is an Application which analyses the</h3>
             <h3>level of alcohol/substance impairment through</h3>
             <h3>a series of games designed to test cognitive</h3>
-            <h3>abilities to determine an individual's level of</h3>
+            <h3>abilities to determine an individual&apos;s level of</h3>
             <h3>awareness.</h3>
             <div className={styles.pattern}>
-              <Image src={Pattern} />
+              <Image alt={'pattern'} src={Pattern} />
             </div>
           </div>
         </div>

@@ -12,7 +12,7 @@ const HeaderBar = () => {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <div className={styles.childContainer}>
-            <Image src={Logo} width="75px" height="75px" />
+            <Image alt={'logo'} src={Logo} width="75px" height="75px" />
           </div>
         </Toolbar>
       </Container>

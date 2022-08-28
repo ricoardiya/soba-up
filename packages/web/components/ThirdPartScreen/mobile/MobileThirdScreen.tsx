@@ -11,7 +11,7 @@ const MobileThirdScreen = () => {
       <div className={styles.imageText}>
         <div className={styles.imageParentContainer}>
           <div className={styles.imageContainer}>
-            <Image src={MockupOne} layout="responsive" />
+            <Image alt={'mockup-one'} src={MockupOne} layout="responsive" />
           </div>
         </div>
         <h2>
@@ -24,14 +24,14 @@ const MobileThirdScreen = () => {
           The ball will move in a circular motion. If it passes through a
           circle, the circle must be swiftly tapped. The circle will start to
           move faster. You can only touch the circle if it turns red and if the
-          ball is on top of it. If you touch the circle if itʼs not red yet,
-          you'll lose a point
+          ball is on top of it. If you touch the circle if it&apos;s not red
+          yet, you&apos;ll lose a point
         </h3>
       </div>
       <div className={styles.imageText}>
         <div className={styles.imageParentContainer}>
           <div className={styles.imageContainer}>
-            <Image src={MockupTwo} layout="responsive" />
+            <Image alt={'mockup-two'} src={MockupTwo} layout="responsive" />
           </div>
         </div>
         <h2>
@@ -49,7 +49,7 @@ const MobileThirdScreen = () => {
       <div className={styles.imageText}>
         <div className={styles.imageParentContainer}>
           <div className={styles.imageContainer}>
-            <Image src={MockupThree} layout="responsive" />
+            <Image alt={'mockup-three'} src={MockupThree} layout="responsive" />
           </div>
         </div>
         <h2>Tests for blurry vision and loss of judgement</h2>

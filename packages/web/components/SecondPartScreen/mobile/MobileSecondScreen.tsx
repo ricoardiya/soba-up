@@ -9,7 +9,7 @@ const MobileSecondScreen = () => {
   return (
     <div className={styles.container}>
       <div className={styles.collageImage}>
-        <Image src={Collage} />
+        <Image alt={'collage'} src={Collage} />
       </div>
       <div className={styles.textParentContainer}>
         <div>
@@ -18,10 +18,10 @@ const MobileSecondScreen = () => {
             <h3>Soba Up is an Application which analyses the</h3>
             <h3>level of alcohol/substance impairment through</h3>
             <h3>a series of games designed to test cognitive</h3>
-            <h3>abilities to determine an individual's level of</h3>
+            <h3>abilities to determine an individual&apos;s level of</h3>
             <h3>awareness.</h3>
             <div className={styles.pattern}>
-              <Image src={Pattern} />
+              <Image alt={'pattern'} src={Pattern} />
             </div>
           </div>
         </div>
