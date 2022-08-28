@@ -13,6 +13,9 @@ import SplashScreen from './screens/SplashScreen/SplashScreen'
 import WelcomeScreen from './screens/WelcomeScreen/WelcomeScreen'
 import LoginScreen from './screens/LoginScreen/LoginScreen'
 import DisclaimerScreen from './screens/DisclaimerScreen/DisclaimerScreen'
+import ResultScreen from './screens/ResultScreen/ResultScreen'
+import AnalysisScreen from './screens/AnalysisScreen/AnalysisScreen'
+import NextStepScreen from './screens/NextStepScreen/NextStepScreen'
 
 export default function App() {
   const isLoadingComplete = useCachedResources()
@@ -31,7 +34,10 @@ export default function App() {
           {/* <SplashScreen /> */}
           {/* <WelcomeScreen /> */}
           {/* <LoginScreen /> */}
-          <DisclaimerScreen />
+          {/* <DisclaimerScreen /> */}
+          {/* <ResultScreen /> */}
+          {/* <AnalysisScreen /> */}
+          <NextStepScreen />
           <StatusBar />
         </SafeAreaProvider>
       </Provider>
