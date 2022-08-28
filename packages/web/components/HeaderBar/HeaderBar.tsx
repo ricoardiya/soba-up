@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react';
-import styles from './HeaderBar.module.css';
-import AppBar from '@mui/material/AppBar';
-import { Container } from '@mui/system';
-import { Button, Toolbar } from '@mui/material';
-import Logo from './logo.png';
-import Image from 'next/image';
+import React, { useEffect } from 'react'
+import styles from './HeaderBar.module.css'
+import AppBar from '@mui/material/AppBar'
+import { Container } from '@mui/system'
+import { Button, Toolbar } from '@mui/material'
+import Logo from './logo.png'
+import Image from 'next/image'
 
 const HeaderBar = () => {
   return (
@@ -17,7 +17,7 @@ const HeaderBar = () => {
         </Toolbar>
       </Container>
     </AppBar>
-  );
-};
+  )
+}
 
-export default HeaderBar;
+export default HeaderBar

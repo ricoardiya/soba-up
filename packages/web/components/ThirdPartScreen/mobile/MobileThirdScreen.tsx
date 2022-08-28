@@ -1,9 +1,9 @@
-import React from 'react';
-import styles from './MobileThirdScreen.module.css';
-import MockupOne from '../mockup1.png';
-import MockupTwo from '../mockup2.png';
-import MockupThree from '../mockup3.png';
-import Image from 'next/image';
+import React from 'react'
+import styles from './MobileThirdScreen.module.css'
+import MockupOne from '../mockup1.png'
+import MockupTwo from '../mockup2.png'
+import MockupThree from '../mockup3.png'
+import Image from 'next/image'
 
 const MobileThirdScreen = () => {
   return (
@@ -63,7 +63,7 @@ const MobileThirdScreen = () => {
         </h3>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default MobileThirdScreen;
+export default MobileThirdScreen

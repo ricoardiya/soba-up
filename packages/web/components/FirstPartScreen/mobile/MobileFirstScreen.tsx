@@ -1,10 +1,10 @@
-import React from 'react';
-import Image from 'next/image';
-import Zz from '../zz1.png';
-import styles from './MobileFirstScreen.module.css';
-import Collage from '../collage1.png';
-import Pattern from '../../pattern.png';
-import { Button } from '@mui/material';
+import React from 'react'
+import Image from 'next/image'
+import Zz from '../zz1.png'
+import styles from './MobileFirstScreen.module.css'
+import Collage from '../collage1.png'
+import Pattern from '../../pattern.png'
+import { Button } from '@mui/material'
 
 const MobileFirstScreen = () => {
   return (
@@ -39,7 +39,7 @@ const MobileFirstScreen = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default MobileFirstScreen;
+export default MobileFirstScreen

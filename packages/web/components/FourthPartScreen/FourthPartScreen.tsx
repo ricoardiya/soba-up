@@ -1,24 +1,24 @@
-import React, { useEffect } from 'react';
-import { Button } from '@mui/material';
-import styles from './FourthPartScreen.module.css';
+import React, { useEffect } from 'react'
+import { Button } from '@mui/material'
+import styles from './FourthPartScreen.module.css'
 
 const FourthPartScreen = () => {
-  const [windowWidth, setWindowWidth] = React.useState(0);
+  const [windowWidth, setWindowWidth] = React.useState(0)
 
   const updateDimensions = () => {
-    const width = window.innerWidth;
-    console.log(width);
-    setWindowWidth(width);
-  };
+    const width = window.innerWidth
+    console.log(width)
+    setWindowWidth(width)
+  }
 
   useEffect(() => {
-    updateDimensions();
-    window.addEventListener('resize', updateDimensions);
+    updateDimensions()
+    window.addEventListener('resize', updateDimensions)
 
     return () => {
-      window.removeEventListener('resize', updateDimensions);
-    };
-  }, []);
+      window.removeEventListener('resize', updateDimensions)
+    }
+  }, [])
   return (
     <div className={styles.backgroundContainer}>
       <div className={styles.buttonContainer}>
@@ -43,7 +43,7 @@ const FourthPartScreen = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default FourthPartScreen;
+export default FourthPartScreen

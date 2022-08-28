@@ -1,9 +1,9 @@
-import React from 'react';
-import Image from 'next/image';
-import styles from './MobileSecondScreen.module.css';
-import Pattern from '../../pattern.png';
-import Collage from '../collage2.png';
-import { Button } from '@mui/material';
+import React from 'react'
+import Image from 'next/image'
+import styles from './MobileSecondScreen.module.css'
+import Pattern from '../../pattern.png'
+import Collage from '../collage2.png'
+import { Button } from '@mui/material'
 
 const MobileSecondScreen = () => {
   return (
@@ -27,7 +27,7 @@ const MobileSecondScreen = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default MobileSecondScreen;
+export default MobileSecondScreen

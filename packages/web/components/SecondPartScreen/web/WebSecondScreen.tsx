@@ -1,9 +1,9 @@
-import React from 'react';
-import Image from 'next/image';
-import styles from './WebSecondScreen.module.css';
-import Collage from '../collage2.png';
-import Pattern from '../../pattern.png';
-import { Button } from '@mui/material';
+import React from 'react'
+import Image from 'next/image'
+import styles from './WebSecondScreen.module.css'
+import Collage from '../collage2.png'
+import Pattern from '../../pattern.png'
+import { Button } from '@mui/material'
 
 const WebSecondScreen = () => {
   return (
@@ -34,7 +34,7 @@ const WebSecondScreen = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default WebSecondScreen;
+export default WebSecondScreen
