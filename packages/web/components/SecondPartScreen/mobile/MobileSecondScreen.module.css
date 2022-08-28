@@ -1,0 +1,55 @@
+.container {
+  margin-top: 3rem;
+}
+
+.collageImage {
+  width: 100%;
+  height: 100%;
+  min-width: 357px;
+  min-height: 357px;
+  padding: 5rem;
+}
+
+.textParentContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.headerContainer {
+  display: inline-flex;
+  padding-bottom: 0;
+}
+
+.headerText {
+  float: inline-start;
+}
+
+.pattern {
+  width: 10rem;
+}
+
+.visitAppContainer {
+  display: inline-flex;
+  position: relative;
+}
+
+.sobaUpBg h1 {
+  color: white;
+  -webkit-text-stroke: 0.1px #de6fa1;
+  padding-left: 3rem;
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+
+.secondTextHeader h1 {
+  position: absolute;
+  width: 75%;
+  right: 27%;
+  color: #de6fa1;
+  -webkit-text-stroke: 0;
+}
+
+.textHeader {
+  margin-bottom: 3rem;
+}

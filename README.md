@@ -68,6 +68,7 @@ yarn start
 
 ## Contributors
 
-[@ricoardiya](https://github.com/ricoardiya)
-[@elsatmr](https://github.com/elsatmr)
-[@kelvinc123](https://github.com/kelvinc123)
+| Role       | Contributors                                                                                                                     |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| Developers | [@ricoardiya](https://github.com/ricoardiya) [@elsatmr](https://github.com/elsatmr) [@kelvinc123](https://github.com/kelvinc123) |
+| Designer   | [@sastr6647](https://github.com/sastr6647)                                                                                       |

@@ -1,0 +1,39 @@
+.backgroundContainer {
+  background-color: #de6fa1;
+  height: 100vh;
+}
+
+.buttonContainer h1 {
+  color: white;
+  text-align: center;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 3rem;
+}
+
+.hr2 {
+  position: relative;
+  width: 70px;
+  border: 2px solid white;
+  border-radius: 2px;
+  background-color: white;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.visitAppContainer {
+  display: inline-flex;
+  position: relative;
+  margin-left: 60%;
+}
+
+.visitAppContainer h3 {
+  display: inline-flex;
+  position: relative;
+  color: white;
+}
