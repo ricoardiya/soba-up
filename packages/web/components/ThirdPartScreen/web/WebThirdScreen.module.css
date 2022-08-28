@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 5rem;
+  margin: 3rem;
+  margin-right: 10rem;
+  margin-left: 10rem;
+  margin-top: 5rem;
+}
+
+.imageText {
+  width: 25%;
+}
+
+.imageText h2 {
+  font-size: 20px;
+  text-align: center;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.imageText h3 {
+  text-align: center;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  font-size: 14px;
+}
+
+.imageTextContainer {
+  display: inline;
+}
+
+.imageContainer {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  margin: 1rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}

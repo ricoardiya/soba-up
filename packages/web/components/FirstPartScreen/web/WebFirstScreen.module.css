@@ -1,0 +1,63 @@
+.left {
+  width: 50%;
+  padding-left: 2rem;
+}
+.right {
+  position: relative;
+  width: 50%;
+  right: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  margin: 3rem;
+  margin-right: 10rem;
+  margin-left: 10rem;
+  margin-top: 5rem;
+  margin-bottom: 0rem;
+}
+
+.headerContainer {
+  display: inline-flex;
+  padding-bottom: 0;
+}
+
+.headerText {
+  float: inline-start;
+}
+
+.hr {
+  position: relative;
+  width: 200px;
+  border: 2px solid #de6fa1;
+  border-radius: 2px;
+  background-color: #de6fa1;
+  margin-bottom: 4rem;
+}
+
+.hr2 {
+  position: relative;
+  width: 70px;
+  border: 2px solid black;
+  border-radius: 2px;
+  background-color: black;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.zzImage {
+  float: inline-end;
+  margin-left: 1rem;
+}
+
+.pattern {
+  width: 10rem;
+}
+
+.visitAppContainer {
+  display: inline-flex;
+  position: relative;
+}

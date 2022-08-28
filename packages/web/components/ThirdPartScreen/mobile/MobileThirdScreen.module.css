@@ -1,0 +1,36 @@
+.container {
+  margin: 3rem;
+}
+
+.imageText {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.imageText h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.imageText h3 {
+  text-align: center;
+  font-size: 14px;
+}
+
+.imageTextContainer {
+  display: inline;
+}
+
+.imageContainer {
+  /* max-width: 100%; */
+  width: 40%;
+  height: auto;
+  min-width: 200px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.imageParentContainer {
+  display: flex;
+  justify-content: center;
+}
