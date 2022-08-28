@@ -27,10 +27,33 @@ export default function App() {
   const colorScheme = useColorScheme()
   const appState = useAppSelector(state => state.appReducer)
 
+  const appState = useAppSelector(state => state.appReducer.page)
+
   if (!isLoadingComplete) {
+    return null
+  } else {
+    if (appState === 'login') {
+      return <LoginScreen />
+    } else if (appState === 'disclaimer') {
+      return <DisclaimerScreen />
+    }
+
     return (
       <Provider store={store}>
-        <SafeAreaProvider></SafeAreaProvider>
+        <SafeAreaProvider>
+          {/* <Navigation colorScheme={colorScheme} /> */}
+          {/* <HomeScreen /> */}
+          {/* <SignUpScreen /> */}
+          {/* <EmergencyContactScreen /> */}
+          {/* <SplashScreen /> */}
+          {/* <WelcomeScreen /> */}
+          <LoginScreen />
+          {/* <DisclaimerScreen /> */}
+          {/* <ResultScreen /> */}
+          {/* <AnalysisScreen /> */}
+          <NextStepScreen />
+          <StatusBar />
+        </SafeAreaProvider>
       </Provider>
     )
   } else {
