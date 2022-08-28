@@ -8,7 +8,7 @@ import { changePage } from '../../store/actions/appActions'
 const DisclaimerScreen = () => {
   const dispatch = useAppDispatch()
   const onPress = () => {
-    dispatch(changePage('disclaimer'))
+    dispatch(changePage('games'))
   }
   return (
     <TouchableOpacity onPress={onPress}>

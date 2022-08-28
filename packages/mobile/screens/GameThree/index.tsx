@@ -5,11 +5,9 @@ import TimeBar from './TimeBar'
 import Grid from './Grid'
 import Done from '../../components/Done'
 import { useAppDispatch, useAppSelector } from '../../store/hooks'
-import {
-  startGameThreeAction,
-  startTimerAction
-} from '../../store/actions/gameThreeActions'
+import { startGameThreeAction } from '../../store/actions/gameThreeActions'
 import { Text } from 'react-native'
+import { startTimerAction } from '../../store/actions/gameActions'
 
 export default function GameThree() {
   const gameThreeState = useAppSelector(state => state.gameThreeReducer)

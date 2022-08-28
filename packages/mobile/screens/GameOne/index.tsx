@@ -5,10 +5,8 @@ import TimeBar from '../../components/TimeBar'
 import Grid from './Grid'
 import { useAppDispatch, useAppSelector } from '../../store/hooks'
 import { Text } from 'react-native'
-import {
-  startGameOneAction,
-  startTimerAction
-} from '../../store/actions/gameOneActions'
+import { startGameOneAction } from '../../store/actions/gameOneActions'
+import { startTimerAction } from '../../store/actions/gameActions'
 
 export default function GameOne() {
   const gameOneState = useAppSelector(state => state.gameOneReducers)
