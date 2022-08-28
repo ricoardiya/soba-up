@@ -22,11 +22,18 @@ export default async function handle(
   res: NextApiResponse
 ) {
   if (req.method == 'POST') {
-    const result = await prisma.user.create({
-      data: {
-        ...req.body
+    const result = await prisma.user.findUnique({
+      where: {
+        email: req.body.email
       }
     })
-    res.json(result)
+    if (!result) {
+      return res.status(400).json({ error: 'email not found!' })
+    }
+    if (req.body.password !== result.password) {
+      return res.status(400).json({ error: 'wrong password!' })
+    }
+
+    return res.status(200).json({ status: 'successfully log in', user: result })
   }
 }
