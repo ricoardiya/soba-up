@@ -25,35 +25,39 @@ import { useAppDispatch, useAppSelector } from './store/hooks'
 export default function App() {
   const isLoadingComplete = useCachedResources()
   const colorScheme = useColorScheme()
-
-  const appState = useAppSelector(state => state.appReducer.page)
+  const appState = useAppSelector(state => state.appReducer)
 
   if (!isLoadingComplete) {
-    return null
-  } else {
-    if (appState === 'login') {
-      return <LoginScreen />
-    } else if (appState === 'disclaimer') {
-      return <DisclaimerScreen />
-    }
-
     return (
       <Provider store={store}>
-        <SafeAreaProvider>
-          {/* <Navigation colorScheme={colorScheme} /> */}
-          {/* <HomeScreen /> */}
-          {/* <SignUpScreen /> */}
-          {/* <EmergencyContactScreen /> */}
-          {/* <SplashScreen /> */}
-          {/* <WelcomeScreen /> */}
-          <LoginScreen />
-          {/* <DisclaimerScreen /> */}
-          {/* <ResultScreen /> */}
-          {/* <AnalysisScreen /> */}
-          <NextStepScreen />
-          <StatusBar />
-        </SafeAreaProvider>
+        <SafeAreaProvider></SafeAreaProvider>
       </Provider>
     )
+  } else {
+    if (appState.page === 'login') {
+      return (
+        <Provider store={store}>
+          <SafeAreaProvider>
+            <LoginScreen />
+          </SafeAreaProvider>
+        </Provider>
+      )
+    } else if (appState.page === 'disclaimer') {
+      return (
+        <Provider store={store}>
+          <SafeAreaProvider>
+            <DisclaimerScreen />
+          </SafeAreaProvider>
+        </Provider>
+      )
+    } else {
+      return (
+        <Provider store={store}>
+          <SafeAreaProvider>
+            <Games />
+          </SafeAreaProvider>
+        </Provider>
+      )
+    }
   }
 }
