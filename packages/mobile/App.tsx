@@ -12,6 +12,10 @@ import EmergencyContactScreen from './screens/EmergencyContactScreen/EmergencyCo
 import SplashScreen from './screens/SplashScreen/SplashScreen'
 import WelcomeScreen from './screens/WelcomeScreen/WelcomeScreen'
 import LoginScreen from './screens/LoginScreen/LoginScreen'
+import GameTwo from './screens/GameTwo'
+import Games from './screens/Games'
+import GameOne from './screens/GameOne'
+import GameThree from './screens/GameThree'
 import DisclaimerScreen from './screens/DisclaimerScreen/DisclaimerScreen'
 import ResultScreen from './screens/ResultScreen/ResultScreen'
 import AnalysisScreen from './screens/AnalysisScreen/AnalysisScreen'
@@ -33,6 +37,8 @@ export default function App() {
           {/* <EmergencyContactScreen /> */}
           {/* <SplashScreen /> */}
           {/* <WelcomeScreen /> */}
+          {/* <LoginScreen />*/}
+          {/* <Games />*/}
           {/* <LoginScreen /> */}
           {/* <DisclaimerScreen /> */}
           {/* <ResultScreen /> */}
