@@ -1,7 +1,11 @@
-import { gameTwoReducer } from './gameTwoReducers';
+import { gameOneReducers } from './gameOneReducers'
+import { gameTwoReducers } from './gameTwoReducers'
+import { gameThreeReducer } from './gameThreeReducers'
 
 export const rootReducer = {
-    reducer: {
-        gameTwoReducer
-    },
-};
+  reducer: {
+    gameOneReducers,
+    gameTwoReducers,
+    gameThreeReducer
+  }
+}
