@@ -26,7 +26,9 @@ export default StyleSheet.create({
     textAlign: 'center',
     borderBottomWidth: 2,
     borderBottomColor: '#de6fa1',
-    marginTop: 50
+    marginTop: 50,
+    width: 400,
+    maxWidth: 500
   },
   form: {
     marginTop: 100,
@@ -42,7 +44,9 @@ export default StyleSheet.create({
     textAlign: 'center',
     borderBottomWidth: 2,
     borderBottomColor: 'black',
-    marginTop: 60
+    marginTop: 60,
+    width: 400,
+    maxWidth: 500
   },
   button: {
     color: '#de6fa1',
