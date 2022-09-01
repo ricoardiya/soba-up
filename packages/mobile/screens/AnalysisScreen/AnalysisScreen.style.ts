@@ -3,7 +3,10 @@ import { StyleSheet } from 'react-native'
 export default StyleSheet.create({
   container: {
     flex: 1,
-    padding: 30
+    padding: 30,
+    display: 'flex',
+    justifyContent: 'center',
+    alignSelf: 'center'
   },
   text: {
     color: '#de6fa1',
@@ -11,6 +14,10 @@ export default StyleSheet.create({
     fontSize: 30,
     fontWeight: 'bold',
     top: '25%'
+  },
+  textContainer: {
+    justifyContent: 'center',
+    alignSelf: 'center'
   },
   button: {
     color: '#de6fa1',

@@ -36,10 +36,12 @@ const AnalysisScreen = () => {
   )
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Game 1: ${gameOneAccuracy} %</Text>
-      <Text style={styles.text}>Game 2: {gameTwoAccuracy} %</Text>
-      <Text style={styles.text}>Game 3: {gameThreeAccuracy} %</Text>
-      <Text style={styles.text}>Your Accuracy: {totalAccuracy} %</Text>
+      <View>
+        <Text style={styles.text}>Game 1: ${gameOneAccuracy} %</Text>
+        <Text style={styles.text}>Game 2: {gameTwoAccuracy} %</Text>
+        <Text style={styles.text}>Game 3: {gameThreeAccuracy} %</Text>
+        <Text style={styles.text}>Your Accuracy: {totalAccuracy} %</Text>
+      </View>
       <View style={styles.buttonContainer}>
         <TouchableOpacity style={styles.button} onPress={onPressNextStep}>
           <Text style={styles.buttonText}>Next Step</Text>
