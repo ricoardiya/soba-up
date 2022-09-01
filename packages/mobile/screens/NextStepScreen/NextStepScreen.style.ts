@@ -3,14 +3,18 @@ import { StyleSheet } from 'react-native'
 export default StyleSheet.create({
   container: {
     flex: 1,
-    padding: 35
+    padding: 35,
+    display: 'flex',
+    justifyContent: 'center',
+    alignSelf: 'center'
   },
   header: {
     color: '#de6fa1',
     fontFamily: 'Helvetica',
     fontSize: 30,
     fontWeight: 'bold',
-    marginTop: 150
+    justifyContent: 'center',
+    alignSelf: 'center'
   },
   secondHeader: {
     color: '#de6fa1',
