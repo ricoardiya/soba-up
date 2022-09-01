@@ -3,31 +3,42 @@ import { StyleSheet } from 'react-native'
 export default StyleSheet.create({
   container: {
     flex: 1,
-    padding: 35
+    padding: 35,
+    display: 'flex',
+    justifyContent: 'center',
+    alignSelf: 'center'
   },
   header: {
     color: '#de6fa1',
     fontFamily: 'Helvetica',
     fontSize: 30,
     fontWeight: 'bold',
-    marginTop: 150
+    justifyContent: 'center',
+    alignSelf: 'center'
   },
   secondHeader: {
     color: '#de6fa1',
     fontFamily: 'Helvetica',
     fontSize: 20,
     fontWeight: 'bold',
-    top: '25%'
+    top: '25%',
+    justifyContent: 'center',
+    alignSelf: 'center'
   },
   thirdHeader: {
     color: 'black',
     fontFamily: 'Helvetica',
     fontSize: 16,
     fontWeight: 'bold',
-    top: '25%'
+    top: '25%',
+    justifyContent: 'center',
+    alignSelf: 'center',
+    textAlign: 'center'
   },
   textBlockContainer: {
-    marginTop: 15
+    marginTop: 15,
+    justifyContent: 'center',
+    alignSelf: 'center'
   },
   textBlockLastContainer: {
     marginTop: 40,
@@ -40,7 +51,10 @@ export default StyleSheet.create({
     borderColor: '#de6fa1',
     width: '100%',
     padding: 10,
-    marginTop: 10
+    marginTop: 10,
+    maxWidth: 500,
+    justifyContent: 'center',
+    alignSelf: 'center'
   },
   firstButton: {
     color: 'white',
@@ -50,7 +64,10 @@ export default StyleSheet.create({
     backgroundColor: '#de6fa1',
     width: '100%',
     padding: 10,
-    marginTop: 10
+    marginTop: 10,
+    maxWidth: 500,
+    justifyContent: 'center',
+    alignSelf: 'center'
   },
   buttonText: {
     fontSize: 16,
@@ -67,5 +84,9 @@ export default StyleSheet.create({
     letterSpacing: 0.25,
     textAlign: 'center',
     color: 'white'
+  },
+  buttonContainer: {
+    justifyContent: 'center',
+    alignSelf: 'center'
   }
 })

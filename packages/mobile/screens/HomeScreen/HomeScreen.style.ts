@@ -2,11 +2,15 @@ import { StyleSheet } from 'react-native'
 
 export default StyleSheet.create({
   container: {
-    flex: 1
+    width: '100%',
+    height: '100%',
+    display: 'flex',
+    justifyContent: 'center',
+    alignSelf: 'center'
   },
   bgImage: {
     width: '100%',
-    height: '180%',
+    height: '130%',
     zIndex: 1,
     position: 'absolute'
   },
@@ -16,7 +20,8 @@ export default StyleSheet.create({
     zIndex: 2,
     backgroundColor: 'white',
     borderRadius: 200,
-    left: '25%',
+    justifyContent: 'center',
+    alignSelf: 'center',
     top: '20%'
   },
   button: {
@@ -24,9 +29,11 @@ export default StyleSheet.create({
     borderWidth: 1.5,
     borderRadius: 10,
     borderColor: 'black',
-    width: '50%',
+    width: 170,
     padding: 10,
-    marginBottom: 10
+    marginBottom: 10,
+    justifyContent: 'center',
+    alignSelf: 'center'
   },
   buttonText: {
     fontSize: 16,
@@ -36,8 +43,9 @@ export default StyleSheet.create({
     textAlign: 'center'
   },
   buttonContainer: {
-    marginTop: 120,
-    left: '23%'
+    marginTop: 100,
+    justifyContent: 'center',
+    alignSelf: 'center'
   },
   header: {
     fontFamily: 'Helvetica',
@@ -54,8 +62,10 @@ export default StyleSheet.create({
 
   forgotPassButton: {
     color: 'black',
-    width: '50%',
+    width: '100%',
     padding: 10,
-    marginBottom: 10
+    marginBottom: 10,
+    justifyContent: 'center',
+    alignSelf: 'center'
   }
 })

@@ -23,7 +23,10 @@ const HomeScreen = () => {
   return (
     <View style={styles.container}>
       <View>
-        <Image source={require('./squiggly.png')} style={styles.bgImage} />
+        <ImageBackground
+          source={require('./squiggly.png')}
+          style={styles.bgImage}
+        />
         <Image
           source={require('../../components/logo.png')}
           style={styles.logo}
