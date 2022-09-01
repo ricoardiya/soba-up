@@ -1,12 +1,13 @@
-import { StyleSheet } from 'react-native'
+import { Dimensions, StyleSheet } from 'react-native'
 
 export default StyleSheet.create({
   container: {
-    flex: 1
+    width: Dimensions.get('window').width,
+    height: Dimensions.get('window').height
   },
   bgImage: {
     width: '100%',
-    height: '120%',
+    height: '100%',
     zIndex: 1,
     position: 'absolute'
   },
@@ -15,7 +16,7 @@ export default StyleSheet.create({
     height: '50%',
     zIndex: 2,
     backgroundColor: 'white',
-    borderRadius: 200,
+    borderRadius: 250,
     left: '25%',
     top: '20%'
   },
@@ -27,7 +28,7 @@ export default StyleSheet.create({
     borderWidth: 1.5,
     borderRadius: 10,
     borderColor: 'black',
-    width: '50%',
+    width: 300,
     padding: 10,
     marginTop: 40
   },
@@ -51,7 +52,10 @@ export default StyleSheet.create({
     textAlign: 'center',
     borderBottomWidth: 2,
     borderBottomColor: 'black',
-    marginTop: 60
+    marginTop: 60,
+    width: 300,
+    justifyContent: 'center',
+    alignSelf: 'center'
   },
   inputTextContainer: {
     paddingLeft: 20,

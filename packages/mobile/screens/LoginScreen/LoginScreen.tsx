@@ -1,5 +1,11 @@
 import React from 'react'
-import { Image, Text, TextInput, TouchableOpacity } from 'react-native'
+import {
+  Image,
+  ImageBackground,
+  Text,
+  TextInput,
+  TouchableOpacity
+} from 'react-native'
 import { View } from '../../components/Themed'
 import styles from './LoginScreen.style'
 import { useAppDispatch } from '../../store/hooks'
@@ -15,7 +21,7 @@ const LoginScreen = () => {
   return (
     <View style={styles.container}>
       <View style={styles.images}>
-        <Image
+        <ImageBackground
           source={require('../HomeScreen/squiggly.png')}
           style={styles.bgImage}
         />
