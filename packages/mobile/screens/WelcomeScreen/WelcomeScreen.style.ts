@@ -2,27 +2,23 @@ import { StyleSheet } from 'react-native'
 
 export default StyleSheet.create({
   container: {
-    flex: 1
-  },
-  bgImage: {
     width: '100%',
     height: '100%',
-    zIndex: 1,
-    position: 'absolute'
+    backgroundColor: 'white',
+    justifyContent: 'center',
+    alignSelf: 'center',
+    padding: 20
   },
   logo: {
-    width: 200,
-    height: 200,
-    zIndex: 2,
-    backgroundColor: 'white',
-    borderRadius: 200,
-    left: '25%',
-    top: '15%'
+    width: 125,
+    height: 125,
+    resizeMode: 'contain',
+    justifyContent: 'center',
+    alignSelf: 'center'
   },
   header: {
     fontFamily: 'Helvetica',
     fontSize: 58,
-    marginTop: 435,
     fontWeight: 'bold',
     color: '#de6fa1',
     textAlign: 'center'

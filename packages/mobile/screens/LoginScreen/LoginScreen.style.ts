@@ -1,9 +1,10 @@
-import { Dimensions, StyleSheet } from 'react-native'
+import { StyleSheet } from 'react-native'
 
 export default StyleSheet.create({
   container: {
     width: '100%',
-    height: '100%'
+    height: '100%',
+    backgroundColor: 'white'
   },
   bgImage: {
     width: '100%',
@@ -12,8 +13,9 @@ export default StyleSheet.create({
     position: 'absolute'
   },
   logo: {
-    width: 200,
-    height: '50%',
+    width: 125,
+    height: 125,
+    resizeMode: 'contain',
     zIndex: 2,
     backgroundColor: 'white',
     borderRadius: 250,
@@ -54,6 +56,9 @@ export default StyleSheet.create({
     borderBottomWidth: 2,
     borderBottomColor: 'black',
     marginTop: 60,
+    width: 300,
+    justifyContent: 'center',
+    alignSelf: 'center',
     width: 300,
     justifyContent: 'center',
     alignSelf: 'center'

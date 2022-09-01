@@ -6,7 +6,8 @@ export default StyleSheet.create({
     height: '100%',
     display: 'flex',
     justifyContent: 'center',
-    alignSelf: 'center'
+    alignSelf: 'center',
+    backgroundColor: 'white'
   },
   bgImage: {
     width: '100%',
@@ -32,6 +33,8 @@ export default StyleSheet.create({
     width: 170,
     padding: 10,
     marginBottom: 10,
+    justifyContent: 'center',
+    alignSelf: 'center',
     justifyContent: 'center',
     alignSelf: 'center'
   },
@@ -65,6 +68,8 @@ export default StyleSheet.create({
     width: '100%',
     padding: 10,
     marginBottom: 10,
+    justifyContent: 'center',
+    alignSelf: 'center',
     justifyContent: 'center',
     alignSelf: 'center'
   }

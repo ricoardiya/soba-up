@@ -6,6 +6,9 @@ export default StyleSheet.create({
     padding: 35,
     display: 'flex',
     justifyContent: 'center',
+    alignSelf: 'center',
+    display: 'flex',
+    justifyContent: 'center',
     alignSelf: 'center'
   },
   header: {
@@ -14,7 +17,8 @@ export default StyleSheet.create({
     fontSize: 30,
     fontWeight: 'bold',
     justifyContent: 'center',
-    alignSelf: 'center'
+    alignSelf: 'center',
+    textAlign: 'center'
   },
   secondHeader: {
     color: '#de6fa1',
@@ -22,6 +26,8 @@ export default StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     top: '25%',
+    justifyContent: 'center',
+    alignSelf: 'center',
     justifyContent: 'center',
     alignSelf: 'center'
   },
@@ -33,10 +39,15 @@ export default StyleSheet.create({
     top: '25%',
     justifyContent: 'center',
     alignSelf: 'center',
+    textAlign: 'center',
+    justifyContent: 'center',
+    alignSelf: 'center',
     textAlign: 'center'
   },
   textBlockContainer: {
     marginTop: 15,
+    justifyContent: 'center',
+    alignSelf: 'center',
     justifyContent: 'center',
     alignSelf: 'center'
   },
@@ -54,6 +65,9 @@ export default StyleSheet.create({
     marginTop: 10,
     maxWidth: 500,
     justifyContent: 'center',
+    alignSelf: 'center',
+    maxWidth: 500,
+    justifyContent: 'center',
     alignSelf: 'center'
   },
   firstButton: {
@@ -65,6 +79,9 @@ export default StyleSheet.create({
     width: '100%',
     padding: 10,
     marginTop: 10,
+    maxWidth: 500,
+    justifyContent: 'center',
+    alignSelf: 'center',
     maxWidth: 500,
     justifyContent: 'center',
     alignSelf: 'center'
@@ -84,6 +101,10 @@ export default StyleSheet.create({
     letterSpacing: 0.25,
     textAlign: 'center',
     color: 'white'
+  },
+  buttonContainer: {
+    justifyContent: 'center',
+    alignSelf: 'center'
   },
   buttonContainer: {
     justifyContent: 'center',

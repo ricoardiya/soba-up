@@ -2,14 +2,19 @@ import { StyleSheet } from 'react-native'
 
 export default StyleSheet.create({
   container: {
-    flex: 1
+    width: '100%',
+    height: '100%',
+    backgroundColor: 'white',
+    display: 'flex',
+    justifyContent: 'center',
+    alignSelf: 'center'
   },
   logo: {
     width: 125,
     height: 125,
     resizeMode: 'contain',
-    top: '60%',
-    left: '35%'
+    justifyContent: 'center',
+    alignSelf: 'center'
   },
   inputText: {
     color: '#de6fa1',
@@ -23,13 +28,15 @@ export default StyleSheet.create({
     marginTop: 60
   },
   bottomPart: {
-    marginTop: 150,
     paddingRight: 20,
-    paddingLeft: 20
+    paddingLeft: 20,
+    justifyContent: 'center',
+    alignSelf: 'center'
   },
   header: {
     fontFamily: 'Helvetica',
     fontSize: 30,
+    marginTop: 10,
     marginBottom: 10,
     fontWeight: 'bold',
     color: 'black',
@@ -43,7 +50,9 @@ export default StyleSheet.create({
     borderColor: '#de6fa1',
     width: '100%',
     padding: 10,
-    marginTop: 60
+    marginTop: 60,
+    justifyContent: 'center',
+    alignSelf: 'center'
   },
   buttonText: {
     fontSize: 16,
