@@ -24,7 +24,7 @@ export default StyleSheet.create({
     borderWidth: 1.5,
     borderRadius: 10,
     borderColor: '#de6fa1',
-    width: '100%',
+    width: 300,
     padding: 10,
     marginTop: 20
   },
@@ -38,6 +38,8 @@ export default StyleSheet.create({
   },
 
   buttonContainer: {
-    top: '30%'
+    top: '20%',
+    justifyContent: 'center',
+    alignSelf: 'center'
   }
 })
