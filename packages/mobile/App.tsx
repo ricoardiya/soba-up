@@ -31,37 +31,6 @@ export default function App() {
   if (!isLoadingComplete) {
     return null
   } else {
-    {
-      /* <Navigation colorScheme={colorScheme} /> */
-    }
-    {
-      /* <HomeScreen /> */
-    }
-    {
-      /* <SignUpScreen /> */
-    }
-    {
-      /* <EmergencyContactScreen /> */
-    }
-    {
-      /* <SplashScreen /> */
-    }
-    {
-      /* <WelcomeScreen /> */
-    }
-    // <LoginScreen />
-    {
-      /* <DisclaimerScreen /> */
-    }
-    {
-      /* <ResultScreen /> */
-    }
-    {
-      /* <AnalysisScreen /> */
-    }
-    // <NextStepScreen />
-    // <StatusBar />
-
     return (
       <Provider store={store}>
         <SafeAreaProvider>
@@ -69,31 +38,5 @@ export default function App() {
         </SafeAreaProvider>
       </Provider>
     )
-  } else {
-    if (appState.page === 'login') {
-      return (
-        <Provider store={store}>
-          <SafeAreaProvider>
-            <LoginScreen />
-          </SafeAreaProvider>
-        </Provider>
-      )
-    } else if (appState.page === 'disclaimer') {
-      return (
-        <Provider store={store}>
-          <SafeAreaProvider>
-            <DisclaimerScreen />
-          </SafeAreaProvider>
-        </Provider>
-      )
-    } else {
-      return (
-        <Provider store={store}>
-          <SafeAreaProvider>
-            <Games />
-          </SafeAreaProvider>
-        </Provider>
-      )
-    }
   }
 }
