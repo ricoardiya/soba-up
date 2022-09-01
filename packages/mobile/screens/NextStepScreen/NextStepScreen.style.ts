@@ -21,14 +21,18 @@ export default StyleSheet.create({
     fontFamily: 'Helvetica',
     fontSize: 20,
     fontWeight: 'bold',
-    top: '25%'
+    top: '25%',
+    justifyContent: 'center',
+    alignSelf: 'center'
   },
   thirdHeader: {
     color: 'black',
     fontFamily: 'Helvetica',
     fontSize: 16,
     fontWeight: 'bold',
-    top: '25%'
+    top: '25%',
+    justifyContent: 'center',
+    alignSelf: 'center'
   },
   textBlockContainer: {
     marginTop: 15
@@ -44,7 +48,8 @@ export default StyleSheet.create({
     borderColor: '#de6fa1',
     width: '100%',
     padding: 10,
-    marginTop: 10
+    marginTop: 10,
+    maxWidth: 300
   },
   firstButton: {
     color: 'white',
@@ -54,7 +59,8 @@ export default StyleSheet.create({
     backgroundColor: '#de6fa1',
     width: '100%',
     padding: 10,
-    marginTop: 10
+    marginTop: 10,
+    maxWidth: 300
   },
   buttonText: {
     fontSize: 16,
