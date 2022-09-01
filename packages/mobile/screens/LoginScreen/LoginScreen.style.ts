@@ -2,8 +2,8 @@ import { Dimensions, StyleSheet } from 'react-native'
 
 export default StyleSheet.create({
   container: {
-    width: Dimensions.get('window').width,
-    height: Dimensions.get('window').height
+    width: '100%',
+    height: '100%'
   },
   bgImage: {
     width: '100%',
@@ -17,8 +17,9 @@ export default StyleSheet.create({
     zIndex: 2,
     backgroundColor: 'white',
     borderRadius: 250,
-    left: '25%',
-    top: '20%'
+    top: '20%',
+    justifyContent: 'center',
+    alignSelf: 'center'
   },
   images: {
     flex: 1
