@@ -13,9 +13,7 @@ const Games = () => {
   const dispatch = useAppDispatch()
 
   useEffect(() => {
-    if (gameState.currentGame == 0) {
-      dispatch(startGameOneAction())
-    }
+    dispatch(startGameOneAction())
   }, [])
 
   return (
