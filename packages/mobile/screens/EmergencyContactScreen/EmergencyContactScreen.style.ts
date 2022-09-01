@@ -14,8 +14,7 @@ export default StyleSheet.create({
     height: 125,
     resizeMode: 'contain',
     justifyContent: 'center',
-    alignSelf: 'center',
-    top: '15%'
+    alignSelf: 'center'
   },
   inputText: {
     color: '#de6fa1',

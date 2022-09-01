@@ -4,20 +4,21 @@ export default StyleSheet.create({
   container: {
     width: '100%',
     height: '100%',
-    backgroundColor: 'white'
+    backgroundColor: 'white',
+    justifyContent: 'center',
+    alignSelf: 'center',
+    padding: 20
   },
   logo: {
     width: 125,
     height: 125,
     resizeMode: 'contain',
     justifyContent: 'center',
-    alignSelf: 'center',
-    top: '15%'
+    alignSelf: 'center'
   },
   header: {
     fontFamily: 'Helvetica',
     fontSize: 58,
-    marginTop: 435,
     fontWeight: 'bold',
     color: '#de6fa1',
     textAlign: 'center'
