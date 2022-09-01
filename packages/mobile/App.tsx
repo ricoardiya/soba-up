@@ -26,6 +26,7 @@ import { useAppDispatch, useAppSelector } from './store/hooks'
 export default function App() {
   const isLoadingComplete = useCachedResources()
   const colorScheme = useColorScheme()
+  const appState = useAppSelector(state => state.appReducer)
 
   if (!isLoadingComplete) {
     return null
@@ -68,5 +69,31 @@ export default function App() {
         </SafeAreaProvider>
       </Provider>
     )
+  } else {
+    if (appState.page === 'login') {
+      return (
+        <Provider store={store}>
+          <SafeAreaProvider>
+            <LoginScreen />
+          </SafeAreaProvider>
+        </Provider>
+      )
+    } else if (appState.page === 'disclaimer') {
+      return (
+        <Provider store={store}>
+          <SafeAreaProvider>
+            <DisclaimerScreen />
+          </SafeAreaProvider>
+        </Provider>
+      )
+    } else {
+      return (
+        <Provider store={store}>
+          <SafeAreaProvider>
+            <Games />
+          </SafeAreaProvider>
+        </Provider>
+      )
+    }
   }
 }
