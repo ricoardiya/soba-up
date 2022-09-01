@@ -1,4 +1,4 @@
-import { Dimensions, StyleSheet } from 'react-native'
+import { Dimensions, Dimensions, StyleSheet } from 'react-native'
 
 export default StyleSheet.create({
   container: {
@@ -56,6 +56,9 @@ export default StyleSheet.create({
     borderBottomWidth: 2,
     borderBottomColor: 'black',
     marginTop: 60,
+    width: 300,
+    justifyContent: 'center',
+    alignSelf: 'center',
     width: 300,
     justifyContent: 'center',
     alignSelf: 'center'
