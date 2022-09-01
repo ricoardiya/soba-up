@@ -15,10 +15,6 @@ const WelcomeScreen = () => {
     <View style={styles.container}>
       <TouchableOpacity onPress={onPressDisclaimer}>
         <Image
-          source={require('../HomeScreen/squiggly.png')}
-          style={styles.bgImage}
-        />
-        <Image
           source={require('../../components/logo.png')}
           style={styles.logo}
         />

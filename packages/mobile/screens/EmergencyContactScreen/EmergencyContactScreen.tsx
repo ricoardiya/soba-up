@@ -8,7 +8,7 @@ import { changePage } from '../../store/actions/appActions'
 const EmergencyContactScreen = () => {
   const dispatch = useAppDispatch()
   const onPress = () => {
-    dispatch(changePage('disclaimer'))
+    dispatch(changePage('welcome'))
   }
   const [fullName, setFullName] = React.useState('')
   const [phoneNumber, setPhoneNumber] = React.useState('')
