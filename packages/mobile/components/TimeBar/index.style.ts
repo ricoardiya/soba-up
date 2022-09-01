@@ -4,7 +4,7 @@ import metrics from '../../config/metrics'
 
 export default StyleSheet.create({
   container: {
-    flexDirection: 'row'
+    marginTop: 50
   },
   content: {
     backgroundColor: colors.PINK,

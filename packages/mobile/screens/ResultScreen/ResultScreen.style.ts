@@ -1,20 +1,22 @@
-import { StyleSheet } from 'react-native'
+import { Dimensions, StyleSheet } from 'react-native'
 
 export default StyleSheet.create({
   container: {
-    flex: 1,
+    width: '100%',
+    height: '100%',
     backgroundColor: '#de6fa1',
-    padding: 50
+    padding: 50,
+    justifyContent: 'center',
+    alignSelf: 'center'
   },
   text: {
     color: 'white',
     fontFamily: 'Helvetica',
     fontSize: 30,
-    fontWeight: 'bold',
-    top: '25%'
+    fontWeight: 'bold'
   },
   textBlock: {
-    top: '20%'
+    top: '10%'
   },
   button: {
     color: 'white',
@@ -35,6 +37,6 @@ export default StyleSheet.create({
   },
 
   buttonContainer: {
-    top: '30%'
+    top: 10
   }
 })

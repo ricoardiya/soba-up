@@ -6,7 +6,7 @@ export default StyleSheet.create({
   },
   bgImage: {
     width: '100%',
-    height: '180%',
+    height: '120%',
     zIndex: 1,
     position: 'absolute'
   },
@@ -19,6 +19,9 @@ export default StyleSheet.create({
     left: '25%',
     top: '20%'
   },
+  images: {
+    flex: 1
+  },
   button: {
     color: 'black',
     borderWidth: 1.5,
@@ -26,7 +29,7 @@ export default StyleSheet.create({
     borderColor: 'black',
     width: '50%',
     padding: 10,
-    marginBottom: 10
+    marginTop: 40
   },
   buttonText: {
     fontSize: 16,
@@ -36,8 +39,8 @@ export default StyleSheet.create({
     textAlign: 'center'
   },
   buttonContainer: {
-    marginTop: 50,
-    left: '23%'
+    justifyContent: 'flex-end',
+    alignItems: 'center'
   },
   inputText: {
     color: '#de6fa1',
@@ -53,6 +56,6 @@ export default StyleSheet.create({
   inputTextContainer: {
     paddingLeft: 20,
     paddingRight: 20,
-    marginTop: 110
+    flex: 1
   }
 })

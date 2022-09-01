@@ -19,17 +19,12 @@ export default function GameTwo() {
 
   return (
     <View style={styles.container}>
-      {gameTwoState.isGameRunning && (
-        <>
-          <TimeBar />
-          <Grid colors={gameTwoState.colors} />
-        </>
-      )}
-      {!gameTwoState.isGameRunning && (
-        <>
-          <Text>your score is {gameTwoState.score}</Text>
-        </>
-      )}
+      <View style={styles.timebar}>
+        <TimeBar />
+      </View>
+      <View style={styles.grid}>
+        <Grid colors={gameTwoState.colors} />
+      </View>
     </View>
   )
 }

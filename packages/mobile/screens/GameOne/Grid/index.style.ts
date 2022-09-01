@@ -62,7 +62,7 @@ export default StyleSheet.create({
   tapBorder: {
     justifyContent: 'center',
     alignSelf: 'center',
-    marginTop: 40,
+    marginTop: '5%',
     width: 120,
     height: 120,
     borderColor: colors.DEFAULT_BLACK,

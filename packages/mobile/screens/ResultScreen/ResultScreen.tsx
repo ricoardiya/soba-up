@@ -30,9 +30,11 @@ const ResultScreen = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>
-        From the results, our app suggests that you:{' '}
-      </Text>
+      <View>
+        <Text style={styles.text}>
+          From the results, our app suggests that you:{' '}
+        </Text>
+      </View>
       {totalAccuracy > 70 ? (
         <View style={styles.textBlock}>
           <Text style={styles.text}>Pass the sobriety test!</Text>

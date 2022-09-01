@@ -11,13 +11,16 @@ const DisclaimerScreen = () => {
     dispatch(changePage('games'))
   }
   return (
-    <TouchableOpacity onPress={onPress}>
-      <View style={styles.container}>
-        <Text style={styles.text}>
-          Play while sitting down and Hold phone in the upright position!
-        </Text>
+    <View style={styles.container}>
+      <Text style={styles.text}>
+        Play while sitting down and Hold phone in the upright position!
+      </Text>
+      <View style={styles.buttonContainer}>
+        <TouchableOpacity style={styles.button} onPress={onPress}>
+          <Text style={styles.buttonText}>START GAME</Text>
+        </TouchableOpacity>
       </View>
-    </TouchableOpacity>
+    </View>
   )
 }
 

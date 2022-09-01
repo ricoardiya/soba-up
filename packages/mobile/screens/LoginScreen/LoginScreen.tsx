@@ -14,7 +14,7 @@ const LoginScreen = () => {
   }
   return (
     <View style={styles.container}>
-      <View>
+      <View style={styles.images}>
         <Image
           source={require('../HomeScreen/squiggly.png')}
           style={styles.bgImage}
@@ -35,11 +35,11 @@ const LoginScreen = () => {
           placeholder="Password"
           style={styles.inputText}
         />
-      </View>
-      <View style={styles.buttonContainer}>
-        <TouchableOpacity style={styles.button} onPress={onPress}>
-          <Text style={styles.buttonText}>Sign In</Text>
-        </TouchableOpacity>
+        <View style={styles.buttonContainer}>
+          <TouchableOpacity style={styles.button} onPress={onPress}>
+            <Text style={styles.buttonText}>Sign In</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </View>
   )

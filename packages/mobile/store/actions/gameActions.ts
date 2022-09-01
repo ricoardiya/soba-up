@@ -10,3 +10,5 @@ export const startTimerAction = createAsyncThunk(
     await timeUtils.delay(timings.TIME_LIMIT_MS)
   }
 )
+
+export const finishGameAction = createAction('FINISH_GAME')

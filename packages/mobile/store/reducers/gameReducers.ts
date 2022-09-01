@@ -1,5 +1,9 @@
 import { createReducer } from '@reduxjs/toolkit'
-import { startGameOneAction, startTimerAction } from '../actions/gameActions'
+import {
+  finishGameAction,
+  startGameOneAction,
+  startTimerAction
+} from '../actions/gameActions'
 
 interface GameState {
   currentGame: number
@@ -27,5 +31,9 @@ export const gameReducers = createReducer(initialGameState, builder => {
         state.isEndGame = false
         state.currentGame++
       }
+    })
+    .addCase(finishGameAction, (state, action) => {
+      state.currentGame = 0
+      state.isEndGame = true
     })
 })

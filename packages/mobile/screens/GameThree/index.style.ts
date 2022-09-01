@@ -4,9 +4,18 @@ export default StyleSheet.create({
   container: {
     flex: 1
   },
+  timebar: {
+    flex: 0.5
+  },
+  grid: {
+    flex: 1
+  },
+  buttonContainers: {
+    flex: 1
+  },
   text: {
-    paddingTop: 10,
+    marginTop: 10,
     textAlign: 'center',
-    paddingBottom: 10
+    marginBottom: 10
   }
 })
