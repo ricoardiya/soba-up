@@ -49,7 +49,7 @@ export default StyleSheet.create({
     width: '100%',
     padding: 10,
     marginTop: 10,
-    maxWidth: 300
+    maxWidth: 500
   },
   firstButton: {
     color: 'white',
@@ -60,7 +60,7 @@ export default StyleSheet.create({
     width: '100%',
     padding: 10,
     marginTop: 10,
-    maxWidth: 300
+    maxWidth: 500
   },
   buttonText: {
     fontSize: 16,
@@ -77,5 +77,9 @@ export default StyleSheet.create({
     letterSpacing: 0.25,
     textAlign: 'center',
     color: 'white'
+  },
+  buttonContainer: {
+    justifyContent: 'center',
+    alignSelf: 'center'
   }
 })

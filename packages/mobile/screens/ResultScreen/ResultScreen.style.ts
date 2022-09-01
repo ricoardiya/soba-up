@@ -13,10 +13,14 @@ export default StyleSheet.create({
     color: 'white',
     fontFamily: 'Helvetica',
     fontSize: 30,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    justifyContent: 'center',
+    alignSelf: 'center'
   },
   textBlock: {
-    top: '10%'
+    top: '10%',
+    justifyContent: 'center',
+    alignSelf: 'center'
   },
   button: {
     color: 'white',
@@ -25,7 +29,8 @@ export default StyleSheet.create({
     borderColor: 'white',
     width: '100%',
     padding: 10,
-    marginTop: 20
+    marginTop: 20,
+    maxWidth: 300
   },
   buttonText: {
     fontSize: 16,
@@ -37,6 +42,8 @@ export default StyleSheet.create({
   },
 
   buttonContainer: {
-    top: 10
+    top: 10,
+    justifyContent: 'center',
+    alignSelf: 'center'
   }
 })
