@@ -20,38 +20,51 @@ import DisclaimerScreen from './screens/DisclaimerScreen/DisclaimerScreen'
 import ResultScreen from './screens/ResultScreen/ResultScreen'
 import AnalysisScreen from './screens/AnalysisScreen/AnalysisScreen'
 import NextStepScreen from './screens/NextStepScreen/NextStepScreen'
+import Screen from './screens/Screen'
 import { useAppDispatch, useAppSelector } from './store/hooks'
 
 export default function App() {
   const isLoadingComplete = useCachedResources()
   const colorScheme = useColorScheme()
 
-  const appState = useAppSelector(state => state.appReducer.page)
-
   if (!isLoadingComplete) {
     return null
   } else {
-    if (appState === 'login') {
-      return <LoginScreen />
-    } else if (appState === 'disclaimer') {
-      return <DisclaimerScreen />
+    {
+      /* <Navigation colorScheme={colorScheme} /> */
     }
+    {
+      /* <HomeScreen /> */
+    }
+    {
+      /* <SignUpScreen /> */
+    }
+    {
+      /* <EmergencyContactScreen /> */
+    }
+    {
+      /* <SplashScreen /> */
+    }
+    {
+      /* <WelcomeScreen /> */
+    }
+    // <LoginScreen />
+    {
+      /* <DisclaimerScreen /> */
+    }
+    {
+      /* <ResultScreen /> */
+    }
+    {
+      /* <AnalysisScreen /> */
+    }
+    // <NextStepScreen />
+    // <StatusBar />
 
     return (
       <Provider store={store}>
         <SafeAreaProvider>
-          {/* <Navigation colorScheme={colorScheme} /> */}
-          {/* <HomeScreen /> */}
-          {/* <SignUpScreen /> */}
-          {/* <EmergencyContactScreen /> */}
-          {/* <SplashScreen /> */}
-          {/* <WelcomeScreen /> */}
-          <LoginScreen />
-          {/* <DisclaimerScreen /> */}
-          {/* <ResultScreen /> */}
-          {/* <AnalysisScreen /> */}
-          <NextStepScreen />
-          <StatusBar />
+          <Screen></Screen>
         </SafeAreaProvider>
       </Provider>
     )
