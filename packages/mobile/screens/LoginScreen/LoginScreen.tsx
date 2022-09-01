@@ -9,8 +9,8 @@ const LoginScreen = () => {
   const dispatch = useAppDispatch()
   const [email, setEmail] = React.useState('')
   const [password, setPassword] = React.useState('')
-  const onPress = () => {
-    dispatch(changePage('disclaimer'))
+  const onPressWelcome = () => {
+    dispatch(changePage('welcome'))
   }
   return (
     <View style={styles.container}>
@@ -37,7 +37,7 @@ const LoginScreen = () => {
         />
       </View>
       <View style={styles.buttonContainer}>
-        <TouchableOpacity style={styles.button} onPress={onPress}>
+        <TouchableOpacity style={styles.button} onPress={onPressWelcome}>
           <Text style={styles.buttonText}>Sign In</Text>
         </TouchableOpacity>
       </View>

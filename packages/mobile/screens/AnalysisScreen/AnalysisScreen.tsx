@@ -1,10 +1,16 @@
 import React from 'react'
 import { TouchableOpacity } from 'react-native'
 import { Text, View } from '../../components/Themed'
-import { useAppSelector } from '../../store/hooks'
+import { useAppSelector, useAppDispatch } from '../../store/hooks'
 import styles from './AnalysisScreen.style'
+import { changePage } from '../../store/actions/appActions'
 
 const AnalysisScreen = () => {
+  const dispatch = useAppDispatch()
+  const onPressNextStep = () => {
+    dispatch(changePage('nextStep'))
+  }
+
   const gameOneScore = useAppSelector(state => state.gameOneReducers.score)
   const gameOneNumTry = useAppSelector(state => state.gameOneReducers.level)
   const gameTwoScore = useAppSelector(state => state.gameTwoReducers.score)
@@ -35,7 +41,7 @@ const AnalysisScreen = () => {
       <Text style={styles.text}>Game 3: {gameThreeAccuracy} %</Text>
       <Text style={styles.text}>Your Accuracy: {totalAccuracy} %</Text>
       <View style={styles.buttonContainer}>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={onPressNextStep}>
           <Text style={styles.buttonText}>Next Step</Text>
         </TouchableOpacity>
       </View>

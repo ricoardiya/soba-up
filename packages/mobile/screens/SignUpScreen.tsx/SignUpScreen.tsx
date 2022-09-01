@@ -2,8 +2,15 @@ import React from 'react'
 import { Image, Text, TextInput, TouchableOpacity } from 'react-native'
 import { View } from '../../components/Themed'
 import styles from './SignUpScreen.style'
+import { useAppDispatch } from '../../store/hooks'
+import { changePage } from '../../store/actions/appActions'
 
 const SignUpScreen = () => {
+  const dispatch = useAppDispatch()
+  const onPress = () => {
+    dispatch(changePage('emergencyContact'))
+  }
+
   const [fullName, setFullName] = React.useState('')
   const [phoneNumber, setPhoneNumber] = React.useState('')
   const [streetAddress, setStreetAddress] = React.useState('')
@@ -43,7 +50,7 @@ const SignUpScreen = () => {
           placeholder="Password"
           style={styles.inputText}
         />
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={onPress}>
           <Text style={styles.buttonText}>Create Account</Text>
         </TouchableOpacity>
       </View>

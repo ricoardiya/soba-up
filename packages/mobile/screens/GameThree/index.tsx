@@ -28,15 +28,6 @@ export default function GameThree() {
           <Done />
         </>
       )}
-      {!gameThreeState.isGameRunning && (
-        <>
-          <Text>
-            You got {gameThreeState.numCorrect} out of {gameThreeState.numBlur}{' '}
-            circles!
-          </Text>
-          <Text>You clicked on {gameThreeState.numWrong} wrong circles!</Text>
-        </>
-      )}
     </View>
   )
 }
