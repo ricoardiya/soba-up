@@ -32,7 +32,8 @@ export default StyleSheet.create({
     fontWeight: 'bold',
     top: '25%',
     justifyContent: 'center',
-    alignSelf: 'center'
+    alignSelf: 'center',
+    textAlign: 'center'
   },
   textBlockContainer: {
     marginTop: 15,

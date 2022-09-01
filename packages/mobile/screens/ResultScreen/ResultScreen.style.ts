@@ -43,6 +43,7 @@ export default StyleSheet.create({
 
   buttonContainer: {
     top: 10,
+    width: '100%',
     justifyContent: 'center',
     alignSelf: 'center'
   }
