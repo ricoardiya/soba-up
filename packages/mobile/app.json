@@ -17,6 +17,9 @@
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
+      "infoPlist": {
+        "UIUserInterfaceStyle": "Light"
+      },
       "supportsTablet": true,
       "bundleIdentifier": "up.soba.mobile"
     },
