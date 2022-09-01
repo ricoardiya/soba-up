@@ -6,6 +6,11 @@ import Collage from '../collage1.png'
 import Pattern from '../../pattern.png'
 import { Button } from '@mui/material'
 
+// this should be in configuration file
+const onVisitApp = () => {
+  window.open('https://soba-up-mobile.vercel.app', '_blank')
+}
+
 const WebFirstScreen = () => {
   return (
     <div className={styles.parent}>
@@ -32,7 +37,10 @@ const WebFirstScreen = () => {
           <h3> Indonesia is no exception.</h3>
           <div className={styles.visitAppContainer}>
             <div className={styles.hr2}></div>
-            <Button sx={{ color: 'black', pr: 2, pl: 2, m: 0.5 }}>
+            <Button
+              sx={{ color: 'black', pr: 2, pl: 2, m: 0.5 }}
+              onClick={onVisitApp}
+            >
               <h4>Visit App</h4>
             </Button>
           </div>

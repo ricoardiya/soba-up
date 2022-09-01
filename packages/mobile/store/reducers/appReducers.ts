@@ -6,7 +6,7 @@ interface AppState {
 }
 
 export const initialAppState: AppState = {
-  page: 'login'
+  page: 'home'
 }
 
 export const appReducer = createReducer(initialAppState, builder => {

@@ -2,8 +2,19 @@ import React from 'react'
 import { Text, TouchableOpacity, View } from 'react-native'
 import { useAppSelector } from '../../store/hooks'
 import styles from './ResultScreen.style'
+import { useAppDispatch } from '../../store/hooks'
+import { changePage } from '../../store/actions/appActions'
 
 const ResultScreen = () => {
+  const dispatch = useAppDispatch()
+  const onPressAnalysis = () => {
+    dispatch(changePage('analysis'))
+  }
+
+  const onPressNextStep = () => {
+    dispatch(changePage('nextStep'))
+  }
+
   const gameOneScore = useAppSelector(state => state.gameOneReducers.score)
   const gameOneNumTry = useAppSelector(state => state.gameOneReducers.level)
   const gameTwoScore = useAppSelector(state => state.gameTwoReducers.score)
@@ -39,7 +50,7 @@ const ResultScreen = () => {
         <View style={styles.textBlock}>
           <Text style={styles.text}>Pass the sobriety test!</Text>
           <View style={styles.buttonContainer}>
-            <TouchableOpacity style={styles.button}>
+            <TouchableOpacity style={styles.button} onPress={onPressAnalysis}>
               <Text style={styles.buttonText}>Analysis</Text>
             </TouchableOpacity>
           </View>
@@ -48,10 +59,10 @@ const ResultScreen = () => {
         <View style={styles.textBlock}>
           <Text style={styles.text}>Didn't pass the sobriety test!</Text>
           <View style={styles.buttonContainer}>
-            <TouchableOpacity style={styles.button}>
+            <TouchableOpacity style={styles.button} onPress={onPressAnalysis}>
               <Text style={styles.buttonText}>Analysis</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.button}>
+            <TouchableOpacity style={styles.button} onPress={onPressNextStep}>
               <Text style={styles.buttonText}>Next Step</Text>
             </TouchableOpacity>
           </View>
