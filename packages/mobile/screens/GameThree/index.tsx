@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { View } from '../../components/Themed'
 import styles from './index.style'
-import TimeBar from './TimeBar'
+import TimeBar from '../../components/TimeBar'
 import Grid from './Grid'
 import Done from '../../components/Done'
 import { useAppDispatch, useAppSelector } from '../../store/hooks'
@@ -20,14 +20,15 @@ export default function GameThree() {
 
   return (
     <View style={styles.container}>
-      {gameThreeState.isGameRunning && (
-        <>
-          <TimeBar />
-          <Grid circleProps={gameThreeState.circleProps} />
-          <Text style={[styles.text]}>Tap and remove the blurry circles!</Text>
-          <Done />
-        </>
-      )}
+      <View style={styles.timebar}>
+        <TimeBar />
+      </View>
+      <View style={styles.grid}>
+        <Grid circleProps={gameThreeState.circleProps} />
+      </View>
+      <View style={styles.buttonContainers}>
+        <Text style={styles.text}>Tap and remove the blurry circles!</Text>
+      </View>
     </View>
   )
 }

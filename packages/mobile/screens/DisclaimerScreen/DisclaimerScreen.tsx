@@ -12,11 +12,14 @@ const DisclaimerScreen = () => {
   }
   return (
     <View style={styles.container}>
-      <TouchableOpacity onPress={onPress}>
-        <Text style={styles.text}>
-          Play while sitting down and Hold phone in the upright position!
-        </Text>
-      </TouchableOpacity>
+      <Text style={styles.text}>
+        Play while sitting down and Hold phone in the upright position!
+      </Text>
+      <View style={styles.buttonContainer}>
+        <TouchableOpacity style={styles.button} onPress={onPress}>
+          <Text style={styles.buttonText}>START GAME</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   )
 }

@@ -8,16 +8,18 @@ import GameThree from '../GameThree'
 import { Text } from 'react-native'
 import ResultScreen from '../ResultScreen/ResultScreen'
 
-export default function Games() {
+const Games = () => {
   const gameState = useAppSelector(state => state.gameReducers)
   const dispatch = useAppDispatch()
 
   useEffect(() => {
-    dispatch(startGameOneAction())
+    if (gameState.currentGame == 0) {
+      dispatch(startGameOneAction())
+    }
   }, [])
 
   return (
-    <View style={{ flex: 1, marginTop: 50, paddingBottom: 100 }}>
+    <View style={{ flex: 1 }}>
       {gameState.currentGame === 1 && <GameOne />}
       {gameState.currentGame === 2 && <GameTwo />}
       {gameState.currentGame === 3 && <GameThree />}
@@ -25,3 +27,5 @@ export default function Games() {
     </View>
   )
 }
+
+export default Games

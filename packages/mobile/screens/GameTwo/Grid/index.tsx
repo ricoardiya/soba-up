@@ -22,7 +22,7 @@ export default function Grid({ colors }: { colors: Array<string> }) {
           return <Circle key={index.toString()} color={color} />
         })}
       </View>
-      <View style={{ alignSelf: 'center', marginTop: 80 }}>
+      <View style={{ alignSelf: 'center', marginTop: '5%' }}>
         <Text>Tap only the green dot!</Text>
       </View>
     </View>
