@@ -14,7 +14,8 @@ export default StyleSheet.create({
     fontSize: 30,
     fontWeight: 'bold',
     justifyContent: 'center',
-    alignSelf: 'center'
+    alignSelf: 'center',
+    textAlign: 'center'
   },
   secondHeader: {
     color: '#de6fa1',

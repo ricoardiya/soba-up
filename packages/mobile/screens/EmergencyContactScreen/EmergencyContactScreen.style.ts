@@ -2,7 +2,12 @@ import { StyleSheet } from 'react-native'
 
 export default StyleSheet.create({
   container: {
-    flex: 1
+    width: '100%',
+    height: '100%',
+    backgroundColor: 'white',
+    display: 'flex',
+    justifyContent: 'center',
+    alignSelf: 'center'
   },
   logo: {
     width: 125,
@@ -23,9 +28,10 @@ export default StyleSheet.create({
     marginTop: 60
   },
   bottomPart: {
-    marginTop: 150,
     paddingRight: 20,
-    paddingLeft: 20
+    paddingLeft: 20,
+    justifyContent: 'center',
+    alignSelf: 'center'
   },
   header: {
     fontFamily: 'Helvetica',
@@ -43,7 +49,9 @@ export default StyleSheet.create({
     borderColor: '#de6fa1',
     width: '100%',
     padding: 10,
-    marginTop: 60
+    marginTop: 60,
+    justifyContent: 'center',
+    alignSelf: 'center'
   },
   buttonText: {
     fontSize: 16,

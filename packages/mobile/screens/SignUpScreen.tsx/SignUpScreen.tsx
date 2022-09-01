@@ -19,7 +19,7 @@ const SignUpScreen = () => {
   const [email, setEmail] = React.useState('')
   const [password, setPassword] = React.useState('')
   return (
-    <View>
+    <View style={styles.container}>
       <Image
         source={require('../../components/logo.png')}
         style={styles.logo}

@@ -6,7 +6,8 @@ export default StyleSheet.create({
     height: '100%',
     display: 'flex',
     justifyContent: 'center',
-    alignSelf: 'center'
+    alignSelf: 'center',
+    backgroundColor: 'white'
   },
   bgImage: {
     width: '100%',
