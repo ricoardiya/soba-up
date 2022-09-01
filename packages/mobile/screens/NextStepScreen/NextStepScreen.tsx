@@ -2,8 +2,15 @@ import React from 'react'
 import { TouchableOpacity, View } from 'react-native'
 import { Text } from '../../components/Themed'
 import styles from './NextStepScreen.style'
+import { useAppDispatch } from '../../store/hooks'
+import { changePage } from '../../store/actions/appActions'
 
 const NextStepScreen = () => {
+  const dispatch = useAppDispatch()
+  const onPressGame = () => {
+    dispatch(changePage('game'))
+  }
+
   return (
     <View style={styles.container}>
       <View>
@@ -33,7 +40,7 @@ const NextStepScreen = () => {
         <TouchableOpacity style={styles.button}>
           <Text style={styles.buttonText}>Call Emergency Contact</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={onPressGame}>
           <Text style={styles.buttonText}>Play Again</Text>
         </TouchableOpacity>
       </View>

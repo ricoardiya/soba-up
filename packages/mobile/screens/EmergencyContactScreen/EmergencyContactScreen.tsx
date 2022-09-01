@@ -2,8 +2,14 @@ import React from 'react'
 import { Image, Text, TextInput, TouchableOpacity } from 'react-native'
 import { View } from '../../components/Themed'
 import styles from './EmergencyContactScreen.style'
+import { useAppDispatch } from '../../store/hooks'
+import { changePage } from '../../store/actions/appActions'
 
 const EmergencyContactScreen = () => {
+  const dispatch = useAppDispatch()
+  const onPress = () => {
+    dispatch(changePage('welcome'))
+  }
   const [fullName, setFullName] = React.useState('')
   const [phoneNumber, setPhoneNumber] = React.useState('')
   return (
@@ -26,7 +32,7 @@ const EmergencyContactScreen = () => {
           placeholder="Phone Number"
           style={styles.inputText}
         />
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={onPress}>
           <Text style={styles.buttonText}>Verify Contact</Text>
         </TouchableOpacity>
       </View>

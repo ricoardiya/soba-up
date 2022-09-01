@@ -64,7 +64,7 @@ export default function App() {
     return (
       <Provider store={store}>
         <SafeAreaProvider>
-          <Screen></Screen>
+          <Screen />
         </SafeAreaProvider>
       </Provider>
     )
