@@ -30,7 +30,7 @@ export default StyleSheet.create({
     width: '100%',
     padding: 10,
     marginTop: 20,
-    maxWidth: 300
+    maxWidth: 500
   },
   buttonText: {
     fontSize: 16,

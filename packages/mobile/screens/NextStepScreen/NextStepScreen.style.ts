@@ -35,7 +35,9 @@ export default StyleSheet.create({
     alignSelf: 'center'
   },
   textBlockContainer: {
-    marginTop: 15
+    marginTop: 15,
+    justifyContent: 'center',
+    alignSelf: 'center'
   },
   textBlockLastContainer: {
     marginTop: 40,
@@ -49,7 +51,9 @@ export default StyleSheet.create({
     width: '100%',
     padding: 10,
     marginTop: 10,
-    maxWidth: 500
+    maxWidth: 500,
+    justifyContent: 'center',
+    alignSelf: 'center'
   },
   firstButton: {
     color: 'white',
@@ -60,7 +64,9 @@ export default StyleSheet.create({
     width: '100%',
     padding: 10,
     marginTop: 10,
-    maxWidth: 500
+    maxWidth: 500,
+    justifyContent: 'center',
+    alignSelf: 'center'
   },
   buttonText: {
     fontSize: 16,
