@@ -6,7 +6,8 @@ export default StyleSheet.create({
     padding: 20,
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    backgroundColor: 'white'
   },
   text: {
     fontFamily: 'Helvetica',
@@ -33,6 +34,7 @@ export default StyleSheet.create({
   },
   buttonContainer: {
     justifyContent: 'flex-end',
-    alignItems: 'center'
+    alignItems: 'center',
+    backgroundColor: 'white'
   }
 })

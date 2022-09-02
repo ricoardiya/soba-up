@@ -6,7 +6,8 @@ export default StyleSheet.create({
     padding: 30,
     display: 'flex',
     justifyContent: 'center',
-    alignSelf: 'center'
+    alignSelf: 'center',
+    backgroundColor: 'white'
   },
   text: {
     color: '#de6fa1',
@@ -17,7 +18,8 @@ export default StyleSheet.create({
   },
   textContainer: {
     justifyContent: 'center',
-    alignSelf: 'center'
+    alignSelf: 'center',
+    backgroundColor: 'white'
   },
   button: {
     color: '#de6fa1',
@@ -40,6 +42,7 @@ export default StyleSheet.create({
   buttonContainer: {
     top: '20%',
     justifyContent: 'center',
-    alignSelf: 'center'
+    alignSelf: 'center',
+    backgroundColor: 'white'
   }
 })

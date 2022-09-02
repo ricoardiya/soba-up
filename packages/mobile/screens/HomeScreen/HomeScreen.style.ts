@@ -34,8 +34,6 @@ export default StyleSheet.create({
     padding: 10,
     marginBottom: 10,
     justifyContent: 'center',
-    alignSelf: 'center',
-    justifyContent: 'center',
     alignSelf: 'center'
   },
   buttonText: {
@@ -48,7 +46,8 @@ export default StyleSheet.create({
   buttonContainer: {
     marginTop: 100,
     justifyContent: 'center',
-    alignSelf: 'center'
+    alignSelf: 'center',
+    backgroundColor: 'white'
   },
   header: {
     fontFamily: 'Helvetica',
@@ -68,8 +67,6 @@ export default StyleSheet.create({
     width: '100%',
     padding: 10,
     marginBottom: 10,
-    justifyContent: 'center',
-    alignSelf: 'center',
     justifyContent: 'center',
     alignSelf: 'center'
   }

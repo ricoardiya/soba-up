@@ -31,7 +31,8 @@ export default StyleSheet.create({
     paddingRight: 20,
     paddingLeft: 20,
     justifyContent: 'center',
-    alignSelf: 'center'
+    alignSelf: 'center',
+    backgroundColor: 'white'
   },
   header: {
     fontFamily: 'Helvetica',

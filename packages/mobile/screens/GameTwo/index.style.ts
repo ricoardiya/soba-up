@@ -7,9 +7,11 @@ export default StyleSheet.create({
     backgroundColor: 'white'
   },
   timebar: {
-    flex: 0.5
+    flex: 0.5,
+    backgroundColor: 'white'
   },
   grid: {
-    flex: 5
+    flex: 5,
+    backgroundColor: 'white'
   }
 })
