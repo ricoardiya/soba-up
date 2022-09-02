@@ -1,27 +1,36 @@
 import { NextApiRequest, NextApiResponse } from 'next'
+import Cors from 'cors'
 
 const accountSid = process.env.TWILIO_ACCOUNT_ID
 const authToken = process.env.TWILIO_AUTH_TOKEN
 const messageServiceID = process.env.TWILIO_MESSAGE_SERVICE_ID
 const twilioClient = require('twilio')(accountSid, authToken)
 
+const cors = Cors({
+  methods: ['POST', 'GET', 'HEAD']
+})
+
+function runMiddleware(
+  req: NextApiRequest,
+  res: NextApiResponse,
+  fn: Function
+) {
+  return new Promise((resolve, reject) => {
+    fn(req, res, (result: any) => {
+      if (result instanceof Error) {
+        return reject(result)
+      }
+
+      return resolve(result)
+    })
+  })
+}
+
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  res.setHeader('Access-Control-Allow-Origin', '*')
-  res.setHeader(
-    'Access-Control-Allow-Headers',
-    'Origin, X-Requested-With, Content-Type, Accept'
-  )
-  res.setHeader(
-    'Access-Control-Allow-Methods',
-    'GET, POST, PUT, PATCH, OPTIONS, DELETE'
-  )
-
-  if (req.method === 'OPTIONS') {
-    return res.status(200).json({ status: 'ok' })
-  }
+  await runMiddleware(req, res, cors)
 
   if (req.method === 'POST') {
     const doNotify = req.body.doNotify
