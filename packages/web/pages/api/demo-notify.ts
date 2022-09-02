@@ -10,9 +10,9 @@ export default async function handler(
   res: NextApiResponse
 ) {
   // Only allow POST request
-  if (req.method !== 'POST') {
-    return res.status(405).json({ message: 'Method Not Allowed' })
-  }
+  // if (req.method !== 'POST') {
+  //   return res.status(405).json({ message: 'Method Not Allowed' })
+  // }
 
   if (req.method === 'POST') {
     const doNotify = req.body.doNotify
