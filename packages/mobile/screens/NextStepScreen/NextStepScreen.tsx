@@ -18,7 +18,7 @@ const NextStepScreen = () => {
       },
       body: JSON.stringify({
         doNotify: true,
-        channel: 'whatsapp',
+        channel: 'sms',
         userName: 'rico',
         emergencyPhoneNum: '+6583866471'
       })
