@@ -8,7 +8,7 @@ import { changePage } from '../../store/actions/appActions'
 const NextStepScreen = () => {
   const dispatch = useAppDispatch()
   const onPressGame = () => {
-    dispatch(changePage('game'))
+    dispatch(changePage('games'))
   }
 
   return (
