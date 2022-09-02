@@ -20,7 +20,7 @@ const NextStepScreen = () => {
         doNotify: true,
         channel: 'whatsapp',
         userName: 'rico',
-        emergencyPhoneNum: '+12066188580'
+        emergencyPhoneNum: '+6583866471'
       })
     })
     // let json = await response.json()
