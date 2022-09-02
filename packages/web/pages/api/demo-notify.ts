@@ -14,6 +14,10 @@ export default async function handler(
   //   return res.status(405).json({ message: 'Method Not Allowed' })
   // }
 
+  if (req.method === 'OPTIONS') {
+    return res.status(200)
+  }
+
   if (req.method === 'POST') {
     const doNotify = req.body.doNotify
     const emergencyPhoneNum = req.body.emergencyPhoneNum
