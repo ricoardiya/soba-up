@@ -24,7 +24,8 @@ export default StyleSheet.create({
     alignSelf: 'center'
   },
   images: {
-    flex: 1
+    flex: 1,
+    backgroundColor: 'white'
   },
   button: {
     color: 'black',
@@ -44,7 +45,8 @@ export default StyleSheet.create({
   },
   buttonContainer: {
     justifyContent: 'flex-end',
-    alignItems: 'center'
+    alignItems: 'center',
+    backgroundColor: 'white'
   },
   inputText: {
     color: '#de6fa1',
@@ -58,14 +60,12 @@ export default StyleSheet.create({
     marginTop: 60,
     width: 300,
     justifyContent: 'center',
-    alignSelf: 'center',
-    width: 300,
-    justifyContent: 'center',
     alignSelf: 'center'
   },
   inputTextContainer: {
     paddingLeft: 20,
     paddingRight: 20,
-    flex: 1
+    flex: 1,
+    backgroundColor: 'white'
   }
 })
