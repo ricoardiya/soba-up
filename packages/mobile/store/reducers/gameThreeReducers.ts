@@ -47,23 +47,6 @@ export const gameThreeReducer = createReducer(
           state.circleClicked[parseInt(action.payload.idx)] = 1
         }
       })
-      .addCase(startTimerAction.fulfilled, (state, action) => {
-        for (let i = 0; i < blurryUtils.NUMBER_OF_CIRCLES; i++) {
-          if (state.circleProps[i] === blurryUtils.BLUR) {
-            state.numBlur += 1
-            if (state.circleClicked[i] === 0) {
-              state.numMissing += 1
-            } else {
-              state.numCorrect += 1
-            }
-          } else {
-            if (state.circleClicked[i] === 1) {
-              state.numWrong += 1
-            }
-          }
-        }
-        state.isGameRunning = false
-      })
       .addCase(finishGame, (state, action) => {
         for (let i = 0; i < blurryUtils.NUMBER_OF_CIRCLES; i++) {
           if (state.circleProps[i] === blurryUtils.BLUR) {

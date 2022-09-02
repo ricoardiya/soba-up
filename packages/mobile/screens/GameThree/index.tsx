@@ -5,7 +5,10 @@ import TimeBar from '../../components/TimeBar'
 import Grid from './Grid'
 import Done from '../../components/Done'
 import { useAppDispatch, useAppSelector } from '../../store/hooks'
-import { startGameThreeAction } from '../../store/actions/gameThreeActions'
+import {
+  finishGame,
+  startGameThreeAction
+} from '../../store/actions/gameThreeActions'
 import { Text } from 'react-native'
 import { startTimerAction } from '../../store/actions/gameActions'
 
@@ -14,8 +17,12 @@ export default function GameThree() {
   const dispatch = useAppDispatch()
 
   useEffect(() => {
+    const startTimer = async () => {
+      await dispatch(startTimerAction())
+      dispatch(finishGame())
+    }
     dispatch(startGameThreeAction())
-    dispatch(startTimerAction())
+    startTimer()
   }, [])
 
   return (

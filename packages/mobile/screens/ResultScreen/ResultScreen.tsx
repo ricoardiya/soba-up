@@ -29,14 +29,14 @@ const ResultScreen = () => {
     state => state.gameThreeReducer.numWrong
   )
 
-  const gameOneAccuracy = Math.floor(gameOneScore / gameOneNumTry) * 100
-  const gameTwoAccuracy = Math.floor(gameTwoScore / gameTwoNumTry) * 100
-  const gameThreeAccuracy =
-    Math.floor((gameThreeNumCorrect - gameThreeNumWrong) / gameThreeNumBlur) *
-    100
+  const gameOneAccuracy = Math.round((gameOneScore / gameOneNumTry) * 100)
+  const gameTwoAccuracy = Math.round((gameTwoScore / gameTwoNumTry) * 100)
+  const gameThreeAccuracy = Math.round(
+    ((gameThreeNumCorrect - gameThreeNumWrong) / gameThreeNumBlur) * 100
+  )
 
-  const totalAccuracy = Math.floor(
-    gameOneAccuracy + gameTwoAccuracy + gameThreeAccuracy / 300
+  const totalAccuracy = Math.round(
+    (gameOneAccuracy + gameTwoAccuracy + gameThreeAccuracy) / 3
   )
 
   return (

@@ -25,22 +25,24 @@ const AnalysisScreen = () => {
     state => state.gameThreeReducer.numWrong
   )
 
-  const gameOneAccuracy = Math.floor(gameOneScore / gameOneNumTry) * 100
-  const gameTwoAccuracy = Math.floor(gameTwoScore / gameTwoNumTry) * 100
-  const gameThreeAccuracy =
-    Math.floor((gameThreeNumCorrect - gameThreeNumWrong) / gameThreeNumBlur) *
-    100
+  const gameOneAccuracy = Math.round((gameOneScore / gameOneNumTry) * 100)
+  const gameTwoAccuracy = Math.round((gameTwoScore / gameTwoNumTry) * 100)
+  const gameThreeAccuracy = Math.round(
+    ((gameThreeNumCorrect - gameThreeNumWrong) / gameThreeNumBlur) * 100
+  )
 
   const totalAccuracy = Math.floor(
-    gameOneAccuracy + gameTwoAccuracy + gameThreeAccuracy / 300
+    (gameOneAccuracy + gameTwoAccuracy + gameThreeAccuracy) / 3
   )
   return (
     <View style={styles.container}>
       <View>
-        <Text style={styles.text}>Game 1: ${gameOneAccuracy} %</Text>
+        <Text style={styles.text}>Game 1: {gameOneAccuracy} %</Text>
         <Text style={styles.text}>Game 2: {gameTwoAccuracy} %</Text>
         <Text style={styles.text}>Game 3: {gameThreeAccuracy} %</Text>
-        <Text style={styles.text}>Your Accuracy: {totalAccuracy} %</Text>
+        <Text style={styles.text}>
+          Your Accuracy: {Math.round(totalAccuracy)} %
+        </Text>
       </View>
       <View style={styles.buttonContainer}>
         <TouchableOpacity style={styles.button} onPress={onPressNextStep}>
