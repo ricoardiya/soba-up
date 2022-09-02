@@ -14,7 +14,8 @@ export default StyleSheet.create({
     fontFamily: 'Helvetica',
     fontSize: 30,
     fontWeight: 'bold',
-    top: '25%'
+    top: '25%',
+    backgroundColor: 'white'
   },
   textContainer: {
     justifyContent: 'center',

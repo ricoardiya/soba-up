@@ -30,7 +30,8 @@ export default StyleSheet.create({
     lineHeight: 21,
     fontWeight: 'bold',
     letterSpacing: 0.25,
-    textAlign: 'center'
+    textAlign: 'center',
+    color: 'black'
   },
   buttonContainer: {
     justifyContent: 'flex-end',
