@@ -7,13 +7,16 @@ export default StyleSheet.create({
     backgroundColor: 'white'
   },
   timebar: {
-    flex: 0.5
+    flex: 0.5,
+    backgroundColor: 'white'
   },
   grid: {
-    flex: 1
+    flex: 1,
+    backgroundColor: 'white'
   },
   buttonContainers: {
-    flex: 1
+    flex: 1,
+    backgroundColor: 'white'
   },
   text: {
     marginTop: 10,

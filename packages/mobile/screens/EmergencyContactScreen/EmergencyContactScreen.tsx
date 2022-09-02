@@ -14,12 +14,10 @@ const EmergencyContactScreen = () => {
   const [phoneNumber, setPhoneNumber] = React.useState('')
   return (
     <View style={styles.container}>
-      <View>
-        <Image
-          source={require('../../components/logo.png')}
-          style={styles.logo}
-        />
-      </View>
+      <Image
+        source={require('../../components/logo.png')}
+        style={styles.logo}
+      />
       <View style={styles.bottomPart}>
         <Text style={styles.header}>Emergency Contact Info</Text>
         <TextInput

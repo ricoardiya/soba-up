@@ -22,16 +22,6 @@ const HomeScreen = () => {
   }
   return (
     <View style={styles.container}>
-      <View>
-        <ImageBackground
-          source={require('./squiggly.png')}
-          style={styles.bgImage}
-        />
-        <Image
-          source={require('../../components/logo.png')}
-          style={styles.logo}
-        />
-      </View>
       <View style={styles.buttonContainer}>
         <Text style={styles.header}>soba up</Text>
         <TouchableOpacity style={styles.button} onPress={onPressLogIn}>

@@ -33,7 +33,8 @@ export default StyleSheet.create({
   form: {
     marginTop: 100,
     justifyContent: 'center',
-    alignSelf: 'center'
+    alignSelf: 'center',
+    backgroundColor: 'white'
   },
   inputText: {
     color: '#de6fa1',

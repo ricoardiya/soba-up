@@ -48,7 +48,8 @@ export default StyleSheet.create({
   buttonContainer: {
     marginTop: 100,
     justifyContent: 'center',
-    alignSelf: 'center'
+    alignSelf: 'center',
+    backgroundColor: 'white'
   },
   header: {
     fontFamily: 'Helvetica',
