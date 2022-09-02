@@ -58,6 +58,9 @@ export default StyleSheet.create({
     marginTop: 60,
     width: 300,
     justifyContent: 'center',
+    alignSelf: 'center',
+    width: 300,
+    justifyContent: 'center',
     alignSelf: 'center'
   },
   inputTextContainer: {
