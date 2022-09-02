@@ -10,6 +10,21 @@ const NextStepScreen = () => {
   const onPressGame = () => {
     dispatch(changePage('games'))
   }
+  const onPressEmergency = async () => {
+    let response = await fetch('https://soba-up.vercel.app/api/demo-notify', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        doNotify: true,
+        channel: 'whatsapp',
+        userName: 'rico',
+        emergencyPhoneNum: '+12066188580'
+      })
+    })
+    // let json = await response.json()
+  }
 
   return (
     <View style={styles.container}>
@@ -37,7 +52,7 @@ const NextStepScreen = () => {
         <TouchableOpacity style={styles.firstButton}>
           <Text style={styles.firstButtonText}>Call Ride Home</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={onPressEmergency}>
           <Text style={styles.buttonText}>Call Emergency Contact</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={onPressGame}>
