@@ -9,13 +9,18 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  // Only allow POST request
-  // if (req.method !== 'POST') {
-  //   return res.status(405).json({ message: 'Method Not Allowed' })
-  // }
+  res.setHeader('Access-Control-Allow-Origin', '*')
+  res.setHeader(
+    'Access-Control-Allow-Headers',
+    'Origin, X-Requested-With, Content-Type, Accept'
+  )
+  res.setHeader(
+    'Access-Control-Allow-Methods',
+    'GET, POST, PUT, PATCH, OPTIONS, DELETE'
+  )
 
   if (req.method === 'OPTIONS') {
-    return res.status(200)
+    return res.status(200).json({ status: 'ok' })
   }
 
   if (req.method === 'POST') {
@@ -62,4 +67,5 @@ export default async function handler(
       error: 'channel: ' + req.body.channel + ' is not supported'
     })
   }
+  return res.status(405).json({ error: 'Method not Allowed' })
 }
